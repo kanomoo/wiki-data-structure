@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Assignment-1-Linked-List"
+              "title": "raw-data-structure-full-extracted-notes"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "แบ็คลิงค์ของ Assignment-1-Linked-List"
+              "title": "แบ็คลิงค์ของ raw-data-structure-full-extracted-notes"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ลิงค์ขาออกของ Assignment-1-Linked-List"
+              "title": "ลิงค์ขาออกของ raw-data-structure-full-extracted-notes"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "โครงเรื่องของ Assignment-1-Linked-List"
+              "title": "โครงเรื่องของ raw-data-structure-full-extracted-notes"
             }
           }
         ]
@@ -185,10 +185,18 @@
   },
   "active": "561cf88d081517f8",
   "lastOpenFiles": [
+    "wiki/sources/raw-data-structure-source-inventory.md",
+    "wiki/sources/raw-data-structure-full-extracted-notes.md",
+    "wiki/sources/Lecture-11-Shortest-Path.md",
+    "wiki/sources/Lecture-9-Sorting.md",
+    "wiki/sources/Lecture-2-Review-Python.md",
+    "wiki/sources/Lecture-1-Introduction.md",
+    "wiki/sources/Assignment-1-Linked-List.md",
+    "wiki/sources/Assignment-2-Binary-Tree.md",
+    "wiki/sources/Assignment-3-Binary-Heap.md",
     "conductor/build-detailed-source-notes.ps1",
     "wiki/synthesis/data-structure-complete-exam-notes.md",
     "wiki/synthesis/past-exam-pattern-bank.md",
-    "wiki/sources/raw-data-structure-source-inventory.md",
     "conductor/raw-data-structure-inventory.json",
     "conductor/extracted/โน๊ตอู้ดง_Noteอู้ดง.pdf.txt",
     "conductor/extracted/สำเนาของ_โจทย์ลองทำบทที่4.pdf.txt",
@@ -198,9 +206,7 @@
     "conductor/extracted/สำเนาของ_2.pdf.txt",
     "conductor/extracted/สำเนาของ_1.pdf.txt",
     "conductor/extracted/สำเนาของ_3.pdf.txt",
-    "conductor/extracted/ปีเก่า_สำเนาของ_NW.pdf.txt",
     "conductor/wiki-audit.md",
-    "wiki/sources/Assignment-1-Linked-List.md",
     "wiki/concepts/postfix-logic.md",
     "wiki/concepts/topological-sort.md",
     "wiki/concepts/linked-list.md",
@@ -211,18 +217,12 @@
     "wiki/synthesis/Data-Structure-2567-Series.md",
     "skills/obsidian-markdown/SKILL.md",
     "index.md",
-    "wiki/sources/Assignment-2-Binary-Tree.md",
     "log.md",
     "GEMINI.md",
     "data-structure-roadmap.canvas",
-    "wiki/sources/Lecture-1-Introduction.md",
-    "wiki/sources/Lecture-11-Shortest-Path.md",
     "wiki/sources/Test-Program-1-Queue.md",
     "Topological-Sort.md",
-    "postfix-logic.md",
     "ยังไม่ได้ตั้งชื่อ.canvas",
-    "wiki/sources/Assignment-3-Binary-Heap.md",
-    "wiki/concepts/binary-search-tree.md",
     "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172709.png",
     "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172659.png",
     "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172649.png",

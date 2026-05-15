@@ -33,7 +33,7 @@ foreach ($item in $pdfItems) {
     $extractedBySource[$item.path] = $item
 }
 
-$generatedAt = Get-Date -Format 'yyyy-MM-dd'
+$generatedAt = (Get-Date).ToString('yyyy-MM-dd', [System.Globalization.CultureInfo]::InvariantCulture)
 $builder = [System.Text.StringBuilder]::new()
 
 [void]$builder.AppendLine('---')
@@ -46,7 +46,7 @@ $builder = [System.Text.StringBuilder]::new()
 [void]$builder.AppendLine()
 [void]$builder.AppendLine('# Raw Data Structure Full Extracted Notes')
 [void]$builder.AppendLine()
-[void]$builder.AppendLine("ไฟล์นี้รวมข้อมูลจาก `raw/Data structure` ทั้งหมด ณ วันที่ $generatedAt เพื่อใช้เป็น source note แบบละเอียดใน `wiki/sources`.")
+[void]$builder.AppendLine('ไฟล์นี้รวมข้อมูลจาก `raw/Data structure` ทั้งหมด ณ วันที่ ' + $generatedAt + ' เพื่อใช้เป็น source note แบบละเอียดใน `wiki/sources`.')
 [void]$builder.AppendLine()
 [void]$builder.AppendLine('เนื้อหามี 2 ส่วนหลัก:')
 [void]$builder.AppendLine('- `Source Coverage` เป็นดัชนีครบทุกไฟล์ PDF/รูป พร้อมลิงก์กลับไปยัง raw source')
@@ -67,7 +67,7 @@ foreach ($file in $allRawFiles) {
     if ([string]::IsNullOrWhiteSpace($ext)) { $ext = 'file' }
     $name = $file.Name -replace '\|', '\|'
 
-    if ($extractedBySource.ContainsKey($rel)) {
+    if ($extractedBySource.ContainsKey($rel) -and -not [string]::IsNullOrWhiteSpace([string]$extractedBySource[$rel].extract_file)) {
         $item = $extractedBySource[$rel]
         $detail = "$($item.pages) p / $($item.text_chars) chars; extracted: ``$($item.extract_file)``"
         $preview = "![[$($rel)#page=1|120]]"
@@ -97,7 +97,13 @@ foreach ($file in $allRawFiles) {
 $pdfIndex = 1
 foreach ($item in ($pdfItems | Sort-Object path)) {
     $sourcePath = [string]$item.path
-    $extractPath = Join-Path $Root ([string]$item.extract_file)
+    $extractFile = [string]$item.extract_file
+    if (-not [string]::IsNullOrWhiteSpace($extractFile)) {
+        $extractPath = Join-Path $Root $extractFile
+    }
+    else {
+        $extractPath = $null
+    }
     $title = [System.IO.Path]::GetFileName($sourcePath)
     $safeTitle = $title -replace '#', '\#'
 
@@ -105,10 +111,18 @@ foreach ($item in ($pdfItems | Sort-Object path)) {
     [void]$builder.AppendLine()
     [void]$builder.AppendLine("- Source: [[$sourcePath|$title]]")
     [void]$builder.AppendLine("- Pages/Text: $($item.pages) pages / $($item.text_chars) chars")
-    [void]$builder.AppendLine("- Extracted file: `$($item.extract_file)`")
+    if ([string]::IsNullOrWhiteSpace($extractFile)) {
+        [void]$builder.AppendLine('- Extracted file: _none; visual-only or no text layer_')
+    }
+    else {
+        [void]$builder.AppendLine("- Extracted file: ``$extractFile``")
+    }
     [void]$builder.AppendLine()
 
-    if (Test-Path -LiteralPath $extractPath) {
+    if ([string]::IsNullOrWhiteSpace($extractPath)) {
+        [void]$builder.AppendLine('_No extracted text. Open the embedded source file for the visual page._')
+    }
+    elseif (Test-Path -LiteralPath $extractPath) {
         $text = Get-Content -LiteralPath $extractPath -Raw -Encoding UTF8
         $text = $text.Trim()
         if ([string]::IsNullOrWhiteSpace($text)) {
@@ -121,7 +135,7 @@ foreach ($item in ($pdfItems | Sort-Object path)) {
         }
     }
     else {
-        [void]$builder.AppendLine("_Missing extracted file: `$($item.extract_file)`._")
+        [void]$builder.AppendLine("_Missing extracted file: ``$extractFile``._")
     }
 
     [void]$builder.AppendLine()

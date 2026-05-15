@@ -10,6 +10,9 @@ sources: [raw/Data structure]
 
 หน้านี้เป็นดัชนีครบทุกไฟล์ใน `raw/Data structure` จากการ ingest วันที่ 2026-05-16 ใช้คู่กับ [[data-structure-complete-exam-notes|Data Structure Complete Exam Notes]] เพื่อเปิดต้นฉบับ PDF/รูปกลับไปอ่านหรือดูภาพโจทย์ใน Obsidian ได้ทันที
 
+> [!tip] Detailed archive
+> อ่านข้อความถอดจากต้นฉบับแบบเต็มและดัชนี raw file ครบชุดได้ที่ [[raw-data-structure-full-extracted-notes|Raw Data Structure Full Extracted Notes]].
+
 > [!info] Coverage
 > พบไฟล์ทั้งหมด 86 รายการ: PDF 57 ไฟล์, รูปภาพ 29 ไฟล์. PDF 51 ไฟล์มี text layer ที่ดึงข้อความได้; PDF 6 ไฟล์เป็นภาพล้วน/ไม่มี text layer จึงฝังเป็นต้นฉบับให้เปิดดูตรง ๆ.
 
