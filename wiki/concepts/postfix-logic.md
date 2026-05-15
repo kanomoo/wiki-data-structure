@@ -62,3 +62,33 @@ def evaluate_postfix(expression):
 - [[stack|Stack Concept]]
 - [[Lecture-4-Stack|Stack Lecture Notes]]
 - [[Practice-Implementation-Guide|Expression Tree Practice]]
+
+## Detailed Concept Expansion
+
+Postfix logic removes ambiguity from arithmetic expressions by placing operators after operands. Because operands appear before the operator that consumes them, a stack can evaluate the expression in one left-to-right pass.
+
+### Mental Model
+In infix, precedence and parentheses decide when operations happen. In postfix, order is already encoded. The stack holds values waiting for the next operator.
+
+### Invariants and Rules
+- Every binary operator must find at least two operands on the stack.
+- After applying an operator, push exactly one result back.
+- A valid complete postfix expression leaves exactly one value on the stack.
+- For non-commutative operators, operand order matters: left op right, where right is popped first.
+
+### Implementation Patterns
+Evaluation algorithm: for each token, push operands; on operator, pop right then left, compute, push result. Conversion algorithm: output operands immediately; push operators; pop operators with higher/equal precedence before pushing a new operator; use parentheses to delay popping until matching close parenthesis.
+
+### Complexity and Trade-offs
+Evaluation is O(n) time and O(n) stack space. Infix-to-postfix conversion is also O(n) if each token is pushed and popped at most once.
+
+### Practice and Exam Checklist
+- Trace stack after every token, not just after every operator.
+- Check invalid expressions: too few operands, too many operands, unmatched parentheses.
+- For exponentiation, verify whether the course treats it as right-associative.
+- Keep tokenization separate from stack logic in code.
+
+### Source Connections
+- [[Lecture-4-Stack|Lecture 4 Stack]]
+- [[stack|Stack]]
+- [[Practice-Implementation-Guide|Practice Implementation Guide]]

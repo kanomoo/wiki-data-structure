@@ -44,3 +44,33 @@ Dijkstra's fails if weights are negative. Bellman-Ford can handle negative weigh
 - **Lecture**: [[Lecture-11-Shortest-path|Lecture 11 Shortest Path]]
 - **Practice**: [[Assignment-4-Shortest-Path|Dijkstra Implementation]]
 - **Visual Example**: `raw/Data structure/ปี67/Lecture 11 Shortest path/For Example Graph.pdf`
+
+## Detailed Concept Expansion
+
+Shortest-path algorithms find minimum-cost routes through a graph. The correct algorithm depends on whether edges are weighted and whether any weights are negative.
+
+### Mental Model
+Maintain a best-known distance table and improve it by relaxation. The previous-pointer table records how to reconstruct the route after distances are finalized or stabilized.
+
+### Invariants and Rules
+- Source distance starts at 0; other distances start at infinity.
+- Relaxing edge v -> w checks whether going through v improves w.
+- Dijkstra finalizes the nearest unknown vertex when all weights are nonnegative.
+- Previous pointers should form the final path tree.
+
+### Implementation Patterns
+Unweighted shortest path can use BFS levels. Dijkstra uses a table with known flag, Dv distance, and Pv previous vertex. Each step chooses the unknown vertex with smallest Dv, marks it known, and relaxes outgoing edges.
+
+### Complexity and Trade-offs
+Simple table Dijkstra is O(V^2). With adjacency list and priority queue it can be O((V+E) log V). BFS for unweighted graphs is O(V+E). Space is O(V+E) for graph plus O(V) for tables.
+
+### Practice and Exam Checklist
+- Write Dv/Pv/known table after every selected vertex.
+- Do not use Dijkstra with negative edges.
+- Reconstruct path by walking previous pointers backward from target to source.
+- Distinguish shortest number of edges from shortest weighted distance.
+
+### Source Connections
+- [[Lecture-11-Shortest-Path|Lecture 11 Shortest Path]]
+- [[Assignment-4-Shortest-Path|Assignment 4 Shortest Path]]
+- [[graph-algorithms|Graph Algorithms]]

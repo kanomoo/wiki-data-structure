@@ -46,3 +46,16 @@ Chronological record of wiki operations.
 - Created [[data-structure-complete-exam-notes]] as a detailed Thai reading guide covering ADT, Python OOP, linked list, stack/queue/postfix, tree/BST, hashing, heap, sorting, graph, topological sort, shortest path, assignments, and exam checklist.
 - Created [[past-exam-pattern-bank]] to consolidate recurring patterns from old exams and Noteอู้ดง: double hashing, heap trace, insertion sort, shellsort, topological sort, shortest path tables, and short-answer formulas.
 - Updated `index.md` with the new synthesis and source-index pages.
+
+## [2026-05-16] enrich | Source Pages From Raw Data Structure
+- Corrected ingestion direction to follow the LLM Wiki schema: enrich existing `wiki/sources` pages instead of creating a separate extracted-text archive.
+- Added `Detailed Raw Source Integration` sections to all 22 files in `wiki/sources`.
+- Distributed all 51 extracted text files from `conductor/extracted` into the relevant source pages, preserving page markers for source traceability.
+- Added visual-source checklists for screenshot/image-only assignments, tests, and old exam materials.
+- Removed the temporary archive-style source page and helper script that did not match the wiki architecture.
+
+## [2026-05-16] enrich | Concept Pages From Data Structure Sources
+- Added `Detailed Concept Expansion` sections to all 15 files in `wiki/concepts`.
+- Expanded concept pages with mental models, invariants, implementation patterns, complexity/trade-offs, practice checklists, and source connections.
+- Strengthened previously thin meta pages [[persistent-knowledge]] and [[wiki-architecture]] so they document the LLM Wiki workflow directly.
+- Linked concept pages back to enriched source pages such as [[Lecture-4-Stack]], [[Lecture-10-Graph]], [[Lecture-11-Shortest-Path]], assignments, and synthesis notes.

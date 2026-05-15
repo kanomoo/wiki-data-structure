@@ -62,3 +62,25 @@ The `% capacity` operation is what makes the queue "circular". It ensures that o
 ## Related Pages
 - [[stack|Stack & Queue Concept]]
 - [[Practice-Implementation-Guide|Practice Implementation Guide]]
+
+## Detailed Raw Source Integration
+
+ส่วนนี้เติมจาก raw material ใน `raw/Data structure` เพื่อให้ source page นี้เป็นหน้าใช้งานจริงตามหลัก LLM Wiki: อ่านแล้วรู้ที่มา, เห็น implementation logic, และโยงกลับไปตรวจต้นฉบับได้ทันที.
+
+### Source Coverage Added
+- [[raw/Data structure/ปี67/Test Program 1_ Queue/Screenshot 2026-02-15 172518.png|Screenshot 2026-02-15 172518.png]] visual source
+- [[raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172649.png|Screenshot 2026-02-15 172649.png]] visual source
+- [[raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172659.png|Screenshot 2026-02-15 172659.png]] visual source
+- [[raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172709.png|Screenshot 2026-02-15 172709.png]] visual source
+
+### Deep Notes
+- This test program is screenshot-based and centers on Queue implementation behavior.
+- The safest implementation pattern is a circular queue: fixed array, `front`, `rear`, `size`, modulo wraparound, and explicit full/empty checks.
+- If the problem permits Python list usage, avoid `pop(0)` for performance explanations because it shifts all remaining elements. Use front index or deque-like logic.
+- Test cases should cover enqueue into empty queue, dequeue until empty, wraparound after removals, full queue overflow, and underflow.
+
+### Visual Source Checklist
+- ![[raw/Data structure/ปี67/Test Program 1_ Queue/Screenshot 2026-02-15 172518.png|180]]
+- ![[raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172649.png|180]]
+- ![[raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172659.png|180]]
+- ![[raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172709.png|180]]

@@ -42,3 +42,34 @@ Deletion requires maintaining the BST property after the node is removed. It inv
 - **Lecture**: [[Lecture-5.1-BST|Lecture 5.1 Binary Search Tree]]
 - **Advanced Deletion**: [[bst-deletion-advanced]]
 - **Practice**: `raw/Data structure/ปี67/Lecture 5.1 Binary Search Tree/removebst.pdf`
+
+## Detailed Concept Expansion
+
+A Binary Search Tree is a binary tree with an ordering rule that turns tree shape into searchable structure. Each comparison discards one side of the remaining tree.
+
+### Mental Model
+At every node, ask one question: is the target less than, greater than, or equal to this node? That answer chooses the next subtree.
+
+### Invariants and Rules
+- Left subtree values are less than the node value.
+- Right subtree values are greater than the node value.
+- The invariant must hold recursively for every subtree.
+- Inorder traversal of a valid BST yields sorted order.
+- Duplicate handling must be defined explicitly if duplicates appear.
+
+### Implementation Patterns
+Search and insert are guided descents. Delete has three cases: leaf, one child, two children. The two-child case replaces the node with inorder successor or predecessor, then deletes that replacement from its original position.
+
+### Complexity and Trade-offs
+Operations are O(h). If the tree is balanced, h = O(log n). If inserts arrive sorted and no balancing is used, h = O(n), making the BST behave like a linked list.
+
+### Practice and Exam Checklist
+- Validate a BST using min/max bounds, not only local parent-child comparisons.
+- For deletion, state whether you use successor or predecessor.
+- After each insert/delete, redraw the affected subtree and check inorder order.
+- Watch duplicate student-ID digits in reconstruction problems.
+
+### Source Connections
+- [[Lecture-5.1-BST|Lecture 5.1 BST]]
+- [[Lecture-5.2-BST-Remove|Lecture 5.2 BST Remove]]
+- [[bst-deletion-advanced|BST Deletion Advanced]]

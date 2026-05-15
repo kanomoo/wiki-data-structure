@@ -45,3 +45,38 @@ A binary tree used to represent mathematical expressions.
 - **Deep Dive**: [[binary-search-tree|Binary Search Tree]]
 - **Practice**: [[Assignment-2-Binary-Tree|Binary Tree Assignment]]
 - **Visual Example**: `raw/Data structure/ปี67/Lecture 5 Tree/For example Binary Tree.pdf`
+
+## Detailed Concept Expansion
+
+A tree represents hierarchy. Unlike lists, a node may lead to many descendants, so operations are usually recursive: solve the current node, then solve each subtree.
+
+### Mental Model
+The most important mental move is to see every child as the root of a smaller tree. Binary trees specialize this to at most two children, left and right.
+
+### Invariants and Rules
+- A tree has one root.
+- Every non-root node has exactly one parent.
+- There is exactly one path from root to any node.
+- A binary tree node has at most left and right children.
+- Traversal order is defined by when the root is visited relative to its subtrees.
+
+### Implementation Patterns
+- Preorder: visit root, traverse left, traverse right.
+- Inorder: traverse left, visit root, traverse right.
+- Postorder: traverse left, traverse right, visit root.
+- Recursive base case: empty subtree.
+- For reconstruction, identify root from traversal, split remaining traversal into subtrees, recurse.
+
+### Complexity and Trade-offs
+Any full traversal is O(n) time. Recursive space is O(h), where h is height. Balanced tree height is O(log n); skewed height is O(n).
+
+### Practice and Exam Checklist
+- Memorize traversal names by root position.
+- Draw subtree boundaries when reconstructing.
+- Do not confuse tree height with node count.
+- For expression trees, postorder often matches postfix output.
+
+### Source Connections
+- [[Lecture-5-Tree|Lecture 5 Tree]]
+- [[Assignment-2-Binary-Tree|Assignment 2 Binary Tree]]
+- [[binary-search-tree|Binary Search Tree]]

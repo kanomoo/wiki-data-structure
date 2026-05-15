@@ -11,10 +11,14 @@
             "id": "561cf88d081517f8",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "มุมมองกราฟ"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/Lecture-3-Linked-List.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lecture-3-Linked-List"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/sources/Lecture-3-Linked-List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "แบ็คลิงค์"
+              "title": "แบ็คลิงค์ของ Lecture-3-Linked-List"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "wiki/sources/Lecture-3-Linked-List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ลิงค์ขาออก"
+              "title": "ลิงค์ขาออกของ Lecture-3-Linked-List"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "wiki/sources/Lecture-3-Linked-List.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "โครงเรื่อง"
+              "title": "โครงเรื่องของ Lecture-3-Linked-List"
             }
           }
         ]
@@ -178,18 +185,31 @@
   },
   "active": "561cf88d081517f8",
   "lastOpenFiles": [
-    "index.md",
-    "wiki/sources/raw-data-structure-full-extracted-notes.md",
-    "wiki/sources/raw-data-structure-source-inventory.md",
-    "wiki/sources/Lecture-11-Shortest-Path.md",
+    "wiki/sources/Lecture-9.1.md",
+    "wiki/sources/Test-Program-2-Sorting.md",
+    "wiki/sources/the-llm-wiki-idea.md",
     "wiki/sources/Lecture-9-Sorting.md",
-    "wiki/sources/Lecture-2-Review-Python.md",
+    "wiki/sources/Lecture-8.1-Priority-Queue-Ops.md",
+    "wiki/sources/Lecture-8-Priority-Queue.md",
+    "wiki/concepts/heap-priority-queue.md",
+    "wiki/concepts/hashing.md",
+    "wiki/concepts/graph-algorithms.md",
+    "wiki/concepts/bst-deletion-advanced.md",
+    "wiki/concepts/binary-search-tree.md",
+    "wiki/sources/raw-data-structure-source-inventory.md",
+    "wiki/sources/raw-data-structure-full-extracted-notes.md",
     "wiki/sources/Lecture-1-Introduction.md",
-    "wiki/sources/Assignment-1-Linked-List.md",
-    "wiki/sources/Assignment-2-Binary-Tree.md",
+    "wiki/sources/Assignment-4-Shortest-Path.md",
     "wiki/sources/Assignment-3-Binary-Heap.md",
-    "conductor/build-detailed-source-notes.ps1",
+    "wiki/sources/Assignment-2-Binary-Tree.md",
+    "wiki/sources/Assignment-1-Linked-List.md",
+    "README.md",
+    "log.md",
     "wiki/synthesis/data-structure-complete-exam-notes.md",
+    "index.md",
+    "wiki/sources/Lecture-11-Shortest-Path.md",
+    "wiki/sources/Lecture-2-Review-Python.md",
+    "conductor/build-detailed-source-notes.ps1",
     "wiki/synthesis/past-exam-pattern-bank.md",
     "conductor/raw-data-structure-inventory.json",
     "conductor/extracted/โน๊ตอู้ดง_Noteอู้ดง.pdf.txt",
@@ -201,20 +221,7 @@
     "conductor/extracted/สำเนาของ_1.pdf.txt",
     "conductor/extracted/สำเนาของ_3.pdf.txt",
     "conductor/wiki-audit.md",
-    "wiki/concepts/postfix-logic.md",
-    "wiki/concepts/topological-sort.md",
-    "wiki/concepts/linked-list.md",
-    "wiki/sources/Lecture-3-Linked-List.md",
-    "wiki/synthesis/Practice-Implementation-Guide.md",
-    "wiki/synthesis/Data-Structure-Summarization-Tracker.md",
-    "wiki/synthesis/Exam-Preparation-Guide.md",
-    "wiki/synthesis/Data-Structure-2567-Series.md",
-    "skills/obsidian-markdown/SKILL.md",
-    "log.md",
-    "GEMINI.md",
     "data-structure-roadmap.canvas",
-    "wiki/sources/Test-Program-1-Queue.md",
-    "Topological-Sort.md",
     "ยังไม่ได้ตั้งชื่อ.canvas",
     "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172709.png",
     "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172659.png",

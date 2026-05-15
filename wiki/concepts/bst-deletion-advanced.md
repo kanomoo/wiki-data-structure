@@ -56,3 +56,33 @@ The in-order successor is the smallest value that is still larger than all value
 ## Learning Materials
 - **Lecture Notes**: [[Lecture-5.2-BST-Remove|Lecture 5.2 BST Remove]]
 - **Visual Examples**: `raw/Data structure/ปี67/Lecture 5.2 Binary Search Tree Remove/Example for Binary Search Tree remove 2 std.pdf`
+
+## Detailed Concept Expansion
+
+BST deletion is difficult because removing a node can break both the tree shape and the ordering invariant. The two-child case is the core advanced case because the node cannot simply be bypassed.
+
+### Mental Model
+Deletion is not one operation; it is search plus structural repair. The repair strategy depends on how many children the target has.
+
+### Invariants and Rules
+- The final tree must still satisfy BST ordering globally.
+- Parent links or returned subtree roots must reconnect after deletion.
+- Replacing with successor/predecessor preserves sorted inorder sequence.
+- The replacement node itself must then be removed from its old location.
+
+### Implementation Patterns
+Case 1 leaf: remove parent pointer. Case 2 one child: connect parent directly to child. Case 3 two children: find min in right subtree or max in left subtree, copy its value to target, then delete that successor/predecessor node using case 1 or 2.
+
+### Complexity and Trade-offs
+Finding the target is O(h), finding successor/predecessor is O(h), so deletion remains O(h). Extra recursive stack is O(h).
+
+### Practice and Exam Checklist
+- Show the target node, replacement node, and replacement parent.
+- Do not move an entire subtree unless the algorithm calls for it.
+- If using recursion, each call should return the new root of that subtree.
+- Re-run inorder traversal after deletion to prove sorted order.
+
+### Source Connections
+- [[Lecture-5.2-BST-Remove|Lecture 5.2 BST Remove]]
+- [[Lecture-5.1-BST|Lecture 5.1 BST]]
+- [[binary-search-tree|Binary Search Tree]]

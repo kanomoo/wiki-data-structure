@@ -2,7 +2,7 @@
 type: concept
 tags: [data-structure, algorithm, sorting]
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-16
 sources: [raw/Data structure/ปี67/Lecture 9 Sorting/Lecture 9 Sorting.pdf]
 ---
 
@@ -38,3 +38,33 @@ Takes one element at a time and "inserts" it into its correct position relative 
     - Bubble: `raw/Data structure/ปี67/Lecture 9 Sorting/For Example Bubble sort.pdf`
     - Selection: `raw/Data structure/ปี67/Lecture 9 Sorting/For Example Selection sort.pdf`
     - Insertion: `raw/Data structure/ปี67/Lecture 9 Sorting/Short note Insertion sort.pdf`
+
+## Detailed Concept Expansion
+
+Sorting algorithms rearrange data into order, but each algorithm has a different movement pattern. The course emphasis is not only final sorted output, but also trace states after each pass.
+
+### Mental Model
+Bubble sort moves large items right through adjacent swaps. Selection sort selects the next smallest item. Insertion sort grows a sorted prefix by shifting items to insert a key.
+
+### Invariants and Rules
+- Bubble: after pass k, the largest k items are fixed at the end.
+- Selection: before pass i, positions before i contain the sorted smallest values.
+- Insertion: before inserting index i, the prefix before i is sorted.
+- In-place versions use constant extra memory.
+
+### Implementation Patterns
+Bubble sort uses nested loops and adjacent comparisons. Selection sort tracks min index in the unsorted suffix. Insertion sort stores key, shifts larger elements right, then writes key into the gap.
+
+### Complexity and Trade-offs
+Bubble, selection, and insertion are O(n^2) average/worst in the basic forms. Insertion can be O(n) on nearly sorted input. Selection uses O(n) swaps, while bubble/insertion may move many adjacent items.
+
+### Practice and Exam Checklist
+- Record array after each pass exactly as requested.
+- Do not confuse swaps in selection with shifts in insertion.
+- Mention stability if asked: insertion and bubble can be stable; selection is typically not stable.
+- For code, check loop bounds carefully.
+
+### Source Connections
+- [[Lecture-9-Sorting|Lecture 9 Sorting]]
+- [[Lecture-9.1|Lecture 9.1 Sorting Notes]]
+- [[Test-Program-2-Sorting|Test Program 2 Sorting]]

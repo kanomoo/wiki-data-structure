@@ -46,3 +46,34 @@ A **Graph** $G = (V, E)$ is a non-linear data structure consisting of a set of v
 - **Detailed Sorting**: [[topological-sort|Topological Sort Logic]]
 - **Practice**: [[Assignment-4-Shortest-Path|Shortest Path Dijkstra Practice]]
 - **Visual Example**: `raw/Data structure/ปี67/Lecture 10 Graph/Lecture 10 Graph.pdf`
+
+## Detailed Concept Expansion
+
+A graph models relationships among vertices. The algorithm you choose depends heavily on edge direction, weights, density, and whether cycles are allowed.
+
+### Mental Model
+First choose representation, then algorithm. Matrix/list affects cost of neighbor traversal; weighted/unweighted affects shortest-path choice; directed/acyclic affects topological sort.
+
+### Invariants and Rules
+- Vertices and edges must be defined clearly.
+- Directed edges have one-way meaning.
+- Weighted algorithms must use edge weights consistently.
+- Topological ordering exists only for DAGs.
+- Traversal must mark visited/known vertices to avoid infinite cycling.
+
+### Implementation Patterns
+Adjacency matrix is a V by V table. Adjacency list stores neighbors per vertex. BFS uses a queue and is ideal for unweighted shortest paths. DFS uses recursion/stack and supports cycle detection. Topological sort can use indegree plus queue.
+
+### Complexity and Trade-offs
+Matrix space is O(V^2); list space is O(V+E). BFS/DFS/topological sort are O(V+E) with adjacency lists. Matrix neighbor scans cost O(V) per vertex.
+
+### Practice and Exam Checklist
+- Identify graph type before solving.
+- For adjacency-list traces, list each vertex's outgoing neighbors.
+- For topological sort, compute indegrees first.
+- For shortest path, decide BFS vs Dijkstra based on weights.
+
+### Source Connections
+- [[Lecture-10-Graph|Lecture 10 Graph]]
+- [[topological-sort|Topological Sort]]
+- [[shortest-path-algorithms|Shortest Path Algorithms]]
