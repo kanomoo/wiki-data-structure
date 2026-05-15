@@ -1,0 +1,147 @@
+--- PAGE 1 ---
+DATA STRUCTURES 
+AND
+ALGORITHMS
+Lecture Notes 11
+Prepared by Pradit Pitaksathienkul
+
+--- PAGE 2 ---
+2
+ROAD MAP
+GRAPH ALGORITHMS
+Definition
+Representation of Graphs
+Topological Sort
+Shortest Path Algorithms
+Unweighted Shortest Paths
+
+--- PAGE 3 ---
+3
+Shortest Path Algorithms
+
+Single Shortest Path Problem :
+Given as input a weighted graph, G=(V,E), and a 
+distinguished vertex, s, find the shortest weighted 
+path from s to every other vertex in G
+
+Input is a weighted graph : associated with each edge (vi , vj) is 
+a cost ci,j to traverse the edge.
+
+Cost of a path v1 v2 … vN (weighted path lenght ) is
+
+Unweighted path lenght is merely the number of edges on the 
+path, N-1
+
+
+
+
+1
+1
+1
+,
+N
+i
+i
+ic
+
+--- PAGE 4 ---
+4
+Shortest Path Algorithms
+Example :
+On the figure 
+Cost of shortest 
+weighted path
+from v1 to v6 is 6
+v1 to v4 to v7 to v6
+Shortest 
+unweighted path
+between these 
+vertices is 2
+v1 to v4 to v6
+
+--- PAGE 5 ---
+5
+Shortest Path Algorithms
+
+Negative edges can cause problems!
+
+Path from v5 to v4 has cost 1 but a shorter path exists by 
+following the loop v5, v4, v2, v5, v4, has a cost -5
+
+Shortest path is undefined if there is a negative cost cycle
+
+--- PAGE 6 ---
+6
+Shortest Path Algorithms
+Shortest Path Algorithms
+Unweighted Shortest Paths
+
+--- PAGE 7 ---
+7
+Unweighted Shortest Paths
+We are only interested in the number of edges
+contained on the path
+There are no weights on the edges
+
+--- PAGE 8 ---
+8
+Unweighted Shortest Paths
+Suppose we choose s to be v3
+Shortest path from s to v3 is then a path of length 0
+
+--- PAGE 9 ---
+9
+Unweighted Shortest Paths
+We can start looking for all vertices that are a 
+distance 1 away from s
+Can be found by looking at the vertices adjacent to s
+v1 and v6 are one edge distance from s
+
+--- PAGE 10 ---
+10
+Unweighted Shortest Paths
+We can find vertices whose shortest path from s is 
+exactly 2
+Look at all the vertices adjacent to v1 and v6 which are one 
+edge from s
+So shortest path to v2 and v4 has length 2
+
+--- PAGE 11 ---
+11
+Unweighted Shortest Paths
+Finally we can find, by examining vertices adjacent to 
+the recently evaluated v2 and v4, that v5 and v7 have 
+a shortest path of three edges.
+Now all vertices have been calculated
+
+--- PAGE 12 ---
+12
+Unweighted Shortest Paths
+Initial configuration of table used in 
+unweighted shortest-path computation
+Dv ย่อมาจาก ค าว่า distance แปลว่า ระยะทางค่ามากไว้ก่อน 999
+Pv ย่อมาจาก ค าว่า path แปลว่า เส้นทาง 0
+
+--- PAGE 13 ---
+13
+/*Pseudocode for unweighted shortest-path 
+algorithm USE this Code*/
+class Graph():
+def unweighted(s):
+q = Queue(NUM_VERTICES)
+define v, w as vertex
+q.enqueue( s )
+s.dist = 0
+while (!q.isEmpty()):
+v = q.items[0]
+q.dequeue()
+v.known = true
+for each w adjacent to v:
+if w.dist == INFINITY :
+w.dist = v.dist + 1
+w.path = v
+q.enqueue (w)
+
+--- PAGE 14 ---
+14
+How the data change during the unweighted shortest-path algorithm

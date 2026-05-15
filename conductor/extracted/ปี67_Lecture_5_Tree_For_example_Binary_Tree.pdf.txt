@@ -1,0 +1,49 @@
+--- PAGE 1 ---
+Write the path from node A to node Q A, E, J, Q 
+Write the path from node Q to node A
+
+--- PAGE 2 ---
+Pre Order: root left right 
+In Order: left root right 
+Post Order: left right root 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Pre Order : 
+In Order : 
+Post Order : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+10 
+3 
+19 
+15 
+24 
+8 
+5
+
+--- PAGE 3 ---
+For example 1: Construct a binary tree by using pre-order 
+and in-order sequences given below. Write the output in 
+post-order traversal. 
+In-order: 1, 6, 8, 7 
+Pre-order: 1, 6, 7, 8 
+Explanation: The tree will look like this: 
+ 
+Output is : ? 
+For example 2: 
+Create an Expression Tree from the following infix 
+Expression. 
+(a+(b*c))+(((d*e)+f)*g)

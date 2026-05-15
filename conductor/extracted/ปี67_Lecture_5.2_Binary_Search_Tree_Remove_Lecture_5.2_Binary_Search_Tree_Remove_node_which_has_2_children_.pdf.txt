@@ -1,0 +1,46 @@
+--- PAGE 1 ---
+DATA STRUCTURES 
+AND
+ALGORITHMS
+Lecture Notes 5.2
+Pradit Pitaksathienkul
+
+--- PAGE 2 ---
+2
+ROAD MAP
+TREES
+Implementation of Trees
+Tree Traversals
+Binary Trees
+The Search Tree ADT-Binary SearchTrees
+
+--- PAGE 3 ---
+3
+Binary Search Trees
+Each node in tree stores an item
+items are integers and distinct
+when has no left or ritght child node, mean left 
+or right point to None.
+Properties
+A binary tree
+for each node x
+values at left subtree are smaller
+values at right subtree are larger 
+than the value of x
+
+--- PAGE 4 ---
+4
+find
+
+--- PAGE 5 ---
+5
+Find min
+/* Find min value node in the tree - Return the current node 
+that minimum */ 
+def _min_value_node(self, node):
+current = node
+while current.left is not None:
+current = current.left
+return current
+
+What else to find the max value?

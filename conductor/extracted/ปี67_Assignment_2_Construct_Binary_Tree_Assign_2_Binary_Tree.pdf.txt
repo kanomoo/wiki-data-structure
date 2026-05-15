@@ -1,0 +1,42 @@
+--- PAGE 1 ---
+Assign 2: Construct Binary Tree 
+Construct a binary tree by using the last 5 digits of your 
+student’s id as the post-order sequence include repeating 
+numbers and zeros. Create the in-order sequence by 
+move the last digit to the second digit and swap the 
+fourth and fifth digits at the end. 
+Write the output in pre-order traversal. 
+ 
+For Example: if student's id is 6706021 632032 
+then the last 6 digits are 32032 
+So the post-order sequence is 3, 2, 0, 3, 2 
+The in-order sequence is 3, 2, 2 , 3, 0 
+Hint 1: Root node of tree is the last visiting node in Post-
+order traversal. Thus, Root Node = 2. 
+Hint 2: With the in-order sequence, we can construct 
+binary tree from hint1 
+ 
+ 
+ 
+ 
+ 
+ 
+3, 2 , 2, 3, 0 
+ 
+The second last node in post-order traversal is 3. Thus, 
+node 2 becomes left child of node 3 and node 0 becomes 
+right child of node 3. Thus, the final tree is 
+ 
+3 
+2, 3 , 0
+
+--- PAGE 2 ---
+Result: 
+ 
+Output is : ? 
+ 
+3 
+2 
+3 
+2 
+0

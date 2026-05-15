@@ -1,0 +1,132 @@
+--- PAGE 1 ---
+1
+DATA STRUCTURES 
+AND
+ALGORITHMS
+Lecture Notes 2
+Pradit Pitaksathienkul
+
+--- PAGE 2 ---
+2
+ROAD MAP
+Review Functions
+Review Classes
+previous knowledge
+
+--- PAGE 3 ---
+3
+Function
+A function is a group of statements 
+that has a defined name that is used to 
+refer to that group of statements 
+so that they can be called. 
+The groups of statements that make up 
+a function perform a specific task.
+
+--- PAGE 4 ---
+Syntax
+def functionname(parameter1, parameter2,… ):
+statements
+Example
+def bmiCal(name , weight , height):
+bmi = weight / height ** 2
+print(’Hello’, name) 
+print(’Your BMI is’ , bmi) 
+4
+Function
+
+--- PAGE 5 ---
+5
+Function
+def Function(n):
+i = s = 1
+while s < n:
+i = i+1
+s = s+i
+print("*")
+Function(20)
+1. What’s the result of this program?
+2. How many times the command 
+“print” running?
+
+--- PAGE 6 ---
+6
+Classes
+Creating a class is an object-oriented 
+language's ability to manipulate data to 
+solve problems. 
+There are two things involved: 
+refer to data or store what data (data 
+members) and
+what operations can be performed 
+(member functions or methods).
+
+--- PAGE 7 ---
+7
+Classes
+In python language, a new class is 
+created by giving a name and defining 
+a method associated with the definition.
+Syntax
+class classname:
+methods
+After create class, we create instant or 
+object variable to use class.
+
+--- PAGE 8 ---
+8
+Classes
+class Point:
+def __init__(self,x_input ,y_input):
+self.x = x_input
+self.y = y_input
+myPoint = Point(3,7)
+First method is constructor function.
+In Python, constructor is called with 
+__init__ (with two underscores).
+
+--- PAGE 9 ---
+9
+Classes
+The three parameters are (self, x_input, 
+y_input). 
+self is a special parameter that will 
+always be used as a reference to the 
+object variable. It must always be the 
+first parameter. However, it does not 
+need to be set when called.
+
+--- PAGE 10 ---
+10
+Classes
+self.x and self.y in the constructor are 
+data members of object variable that hold 
+an internal data named x and y. 
+Parameter values ​are initialized to x and 
+y when the object variable is created.
+
+--- PAGE 11 ---
+11
+Classes 
+To create an instance of a Point class 
+(or create an object variable), we do by 
+taking the name of the class and 
+passing it the necessary values 
+(note that we do not call __init__ 
+directly). 
+For example:
+myPoint = Point(3,7)
+
+--- PAGE 12 ---
+12
+Classes
+The variable myPoint is an object variable of 
+Class Point (it is a instant of Class Point). 
+class Point:
+def __init__(self,x_input ,y_input):
+self.x = x_input
+self.y = y_input
+def show(self):
+print(self.x, ’ , ’ ,self.y)
+myPoint = Point(3,7)
+myPoint.show()

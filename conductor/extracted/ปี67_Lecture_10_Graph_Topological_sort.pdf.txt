@@ -1,0 +1,303 @@
+--- PAGE 1 ---
+บทที10 
+กราฟไม่มีทิศทาง Undirect G 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+V= { A ,B , C, D } 
+E = { (A,B), (B,C), (C,D), (D,A) } 
+ 
+จงเขียน path จาก vertex A ไป vertex D 
+A ,B , C ,D 
+อย่าเขียน A  B  C  D 0 คะแนน 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Connect = ต่อเนือง ไม่ใช่ ต่อเชือม 
+AB 
+B 
+C 
+D 
+AC 
+B
+C 
+D 
+AD 
+B 
+C 
+D 
+ 
+ 
+ 
+ 
+A 
+B 
+D
+C
+
+--- PAGE 2 ---
+กราฟมีทิศทาง Direct G 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+V= { E ,F , G, H } 
+E= {(E , F) , ( F, G), (G ,H ), (H , E) } 
+ (F, E) 
+ 
+F adjacent E เพราะมี คู่อันดับ (E,F) 
+แต่ E ไม่ได้ adjacent กับ F เพราะไม่มี คู่อันดับ (F,E) 
+ 
+จงเขียนเส้นทาง(path) จาก จุด E ไป G 
+E, F ,G 
+อย่าเขียน E  F  G 0 คะแนน 
+ 
+Connect 
+EF 
+FE
+G
+H
+EG
+F 
+G
+H
+EH 
+F 
+G 
+H 
+ 
+ 
+ 
+ 
+ 
+E 
+F 
+H 
+G
+
+--- PAGE 3 ---
+Complete Graph 
+ 
+ 
+2 vertex 
+ 
+3 vertex 
+4 vertex 
+5 vertex 
+มี edge 1 เส้น มี edge ? เส้น มี edge ? เส้น มี edge ? เส้น 
+ 
+ 
+N*(N-1) / 2 
+ *( ) / 2 = 
+ *( ) / 2 = 
+ *( ) / 2 = 
+ *( ) / 2 = 
+ 
+Complete Graph ทีมี 10 vertex ถามว่า มี edge กี เส้น
+
+--- PAGE 4 ---
+Representation of Graph 
+Adjacency Matrix 
+u\v 
+1
+2
+3
+4 
+5
+6
+7
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+ 
+ 
+ 
+4 
+ 
+ 
+ 
+ 
+5 
+ 
+ 
+6
+ 
+7 
+ 
+ 
+ 
+Adjacency Matrix ไม่นิยมใช้ เพราะ เปลืองเนื(อทีในหน่วยความจํา 
+ 
+49 ช่อง มีช่องทีเป็น 1 อยู่ 12 ช่อง 
+100 ช่อง มีช่องทีเป็น 1 อยู่ = = % 
+มีช่องทีเป็น 0 หรือไม่ได้ใช้งาน อยู่ %
+
+--- PAGE 5 ---
+Topological Sort 
+ 
+ 
+ 
+1. แปลงภาพกราฟ มาเป็น adjacency list ก่อน
+
+--- PAGE 6 ---
+2. Indegree Array อะเรย์ของจํานวน edge ทีชีเข้าหา vertex 
+v 
+เริมต้น 
+รอบที 1 รอบที รอบที รอบที รอบที รอบที 
+ q 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6 
+2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+ 
+3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+ 
+4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+ 
+5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+ 
+6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 
+ 
+7 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Currentsize=? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Front= ? back =? 
+ 
+ 
+Indegree array q.enqueue() 
+V= 
+for each w adjacent to v W= 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+จงเขียน Topological Sort ทีเป็นผลลัพธ์ จากกราฟดังกล่าว

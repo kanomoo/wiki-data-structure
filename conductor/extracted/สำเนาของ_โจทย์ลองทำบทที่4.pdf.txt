@@ -1,0 +1,35 @@
+--- PAGE 1 ---
+For example: if there is no list's instance variable before, 
+write statements in main program to create the instance variable 
+mylist with ordered inputs are 1, 2, 3, 4, 5 and has result outputs 
+are 1, 2, 3, 4, 5 by using class LinkedList's methods that we 
+learned. 
+ 
+First of all, I suggest you to use pencil or pen to underline or circle 
+the important parts of Question, ask yourself, 
+1. What is the question want to do? 
+2. What are inputs and what are outputs? 
+ 
+The wrong solution is: 
+mylist = LinkedList() 
+mylist.add(1) 
+mylist.add(2) 
+mylist.add(3) 
+mylist.add(4) 
+mylist.add(5) 
+ 
+Why is it wrong? 
+ 
+ 
+The right solution is:
+
+--- PAGE 2 ---
+For example: if there is the exist list's instance variable mylist 
+which has one input 3 already, 
+write statements in main program to create the instance variable 
+mylist with ordered inputs are 1, 2, 4, 5 and has result outputs are 
+1, 2, 3, 4, 5 by using class LinkedList's methods that we learned. 
+The solution is: 
+mylist = LinkedList() x no need to create a new instance variable 
+mylist.add(1) 
+mylist.add(2) x not use add method

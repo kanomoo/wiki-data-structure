@@ -1,0 +1,438 @@
+--- PAGE 1 ---
+Hashing วิธีก
+กาารน้้ำขอมูลใส่ใน
+hash table
+ข้อมูล Array ที่ใส่
+hash function ในนทางอุดมคต
+ิ
+มีคุณสมบัติ 3
+6. ง่ายตต่อการคำ
+2. ตั้งมัั่นใจได้ว่่าข้อมูลที่แตกต่างกัน 2 ตัวตต้องได้ตำแหน่งคนละตตำแหน่ง ใน
+3. ช่ววยกระจายข้อมูลได้อย่า
+ข้อสังเ
+1.0 อย่
+่
+2. ข้อมล้ทที่อยู่ในArray ไม่จำเป็นต้
+หลักการ
+Wraparound ในHashingg ก็
+เมื่อคำนวณถึงตตำแหน่งท้ายขอ
+แล้้วให้วนกลับมา ตำ
+แหน่่งที
+่
+0
+การMod tablesize อีกรอบหน
+ึ่งนั
+main program
+int hash ( const string & key, int tablesizes
+ไวยกร
+ณ์
+คำสั่ง
+int mai
+ในวงเล็บของfor r มมี3 ส่วน แแต่ละสส่วนขั
+↓
+ส่วนท
+ี่ 1
+ส่วนกำ
+String
+&27;
+ส่วนท
+ี่ 2 ส่่วนของเง
+int x ;
+ส่วนท
+ี่ 3
+สส่วนที่เปลี่ยนแปลงใ
+4 -
+hash ("ANN", >
+ของfor loop
+ax = "ANN")
+*
+รอบแรก
+ส่ววนที่
+่ 33
+return &;
+ส่่วนท
+ี่
+่
+1
+ทำแค่ร
+↳
+การmod
+ส่วนที่ 1 ; ส่วนที่ 2
+:
+-
+if ตัวหน้าน้อยกว่า
+ต้ำตอบคื
+เช่
+น 99 #อด
+10 -
+-
+
+--- PAGE 2 ---
+hashVal = -
+for loop
+รอบแรก
+i
+s 0 ; 0 < 3
+hashrals hashVal + Key 20
+I
+&
+%
++ Ai
+&
+·+ 65;
+เลขฐานสิบค่
+่าท
+ี่ใช้ในชีวิตประ
+hashVal =
+65
+for loop
+รอบที
+่
+2
+i
+5 6 ; 1
+<
+ททำส่วนที่ 3
+hashVal =
+hashVal + key (1 ;
+1117
+&
+·63 + ' N '
+ไ
+>65 +18
+2
+hashVal =
+145
+3
+for loop
+รอบที
+่3 i
+5 2;2
+<
+&
+ANN
+hashVal s hashVal + key
+223;
+5
+5
+143 + ' N';
+6
+3
+143 +
+78
+hashVal
+s
+221
+for loop รอบที
+่
+4 i6 3 :
+3 < 5 เ
+ออกจากfor loop
+ไป
+return
+122 %. 7 . 4 ·
+ทำงานในfor
+loop3 เท่ากับ
+3
+↓
+&
+ออกจากfor loop
+ตวแปรi มีค่าเท่ากับไม่มี
+local variable
+ตัวแป
+/
+ถ้า i
+:
+อยูนอก loop ม
+ออกจากfor loop Lashral มีค่าเท่ากับ
+Collision การชนกั
+Open Adressing ไปหาช่องอื่นแทน สูตร hisx ) : chash (x) + + 2i))
+mod Table
++(0) =
+&
+1. Linear Probing เชิงเส้น ไไม่มีเลขย
+ปัญหาของ Linear Probin
+1. ใส่ง่ายแต่ลบ
+การเกาะกลุ่มขั้นแรก
+หมายถึง
+เมื่อมมีการชนกันเกิดขขึ้น
+2. Primary . Cluster inกลุ
+ุ
+
+--- PAGE 3 ---
+2. Quadratic Probing หาช่องว่างใหมม่ให้ย
+E (is
+>
+i &
+3. Double Hashing
+ELis , * hashe (x
+hash, (x) > R-X mod
+RS
+P is a จำนวนเฉพาะและน้อยกว่า TableS
+ถ้าา TableSiz
+a เป็น 10 , R จะเท่าก
+ตา
+>5
+R จะ:เท่ากัน>- tablesi
+/ /
+hash; <x is xy, tablesize
+·
+&
+ชั
+
+--- PAGE 7 ---
+Rehashing
+ววิธีแก้ สร้าง table ขึ้
+้นมาใหม่ที่ขขนาดใหญ่กว
+⑤
+⑥
+·
+ไ
+·จำนวนช่องใน hash table มี7 ช่องใช้ไป้แล้
+↓
+15
+1
+1 S
+·จำนวนช่่องใน hash table มี 100 คิดเป็
+น 4*10 0 k- 557
+2
+2
+2
+ใส่่ 23
+3 ช่อง
+&
+2
+3
+24
+·จำนวนช่่องใน hash tabl e มี
+7 ช่่องใช้ไปแล้ว
+&
+&
+·จำนวนช่องใน hash table มี 100 คิดเป็น 3*1 20 /7 S 7
+S
+S
+·
+1
+ว
+1
+↳
+mmmnว่า10% . inv
+
+--- PAGE 8 ---
+ขั้นตอนที่ 1 ระบบปฏิบัติการคอมพิวเตอร์ จจะทำกาารสร้างตัวแปรจอบเจ็กต์ a ขึ้้นในหน่วย
+คลาสHashTable ชนิดข้อมูล intจะถูกส่งเข้าไปที่ class template ชื่อ
+HashedObjตร
+HasheNObj ในโครงสร้างคลาสHashTable- ก็จะถูกเปลียนเป็นคำว่าint สสำหรับตัวแ
+มมีการสส่งค่าพารามีเตอร์เข้าไป
+3 ค่า คือ
+-9
+ขั้นตอนที่ 2 ระบบปฏิิบัตติการจะไปทำงาน constructure function ฟังก์ชั
+template ( class HasheNObj >
+Hashtable - HashedObj) ::
+Hashtable ( const Hashirob; & notFound, int size
+:ITEM
+NOT
+SOUND ( notfounds, array ( nextPrime ( size (
+S
+makeEmpty >>
+↳
+Priority
+Queues ( HEAPS (
+complete binary tre
+Complete Binary Tree ที่มีความสูง
+H
+บ
+binary tree ที
+่
+มหมดทุก
+จำนวนโหนดอย่างน้อย32x32x32 =327 68โ
+ยกเว้นชั้นล่่างสดที่ไม
+จำนวนโหนดอย่างมาก 2" -
+1
+↳
+ทตติดในรูปเลขยกกกำลัง
+จจะไม่ไ
+เวลาลบข้อมูล
+จะะล
+%ลงใส่ขอ้มลจะ:ใส่ที่พั้นล!"ส
+ดอาก
+ขอ
+รายไป!เว็บเซีน้แหน่่งเป็
+parent น้อยกว่่า chi
+
+--- PAGE 9 ---
+int mai
+11/
+&
+{
+ไ
+Binary Heap <ints a (121; =
+มมี 2 ขั้นนตอน วา
+=
+·
+int x ;
+a. insent ( (4) ;
+·
+a. deleteMin (x);
+6
+7
+g
+1
+1
+12
+template
+< class Comparable
+
+--- PAGE 10 ---
+ขั้นตอ
+นที่ งระบบปฏิบัติการคอมผิวาตอร์ จ
+จะทำการสร้างตัวแปรออบเจ็กต์ a
+ข
+to ชื่่อ Comparable ตรงไหนเเป็นคคำว่า Compara
+ชนิดข้อมูล intจะถูกส่งเข้าไปที่ clas
+โครงสร้า
+ง คลาสBinaryHeap- ก็จะถูกเปลียนเป็นตำว่าint สสำหรับตัวแ
+a
+CurrentSize
+:ตช
+:ค
++ระบบปฏิบััติการจะไปทำงาน constructure function ฟังก์ชัน Bin
+template
+< class Comparable
+BinaryHeap <Comparables :: Binaryteap ( int capacity 1: array ( capacity tS '
+currentSize ((0) {
+ตัวแปรพารามิเตอร์ชื่อ capacity มีค่่าเ
+ระบบปฏิบัติกาารจจะไปจองพืื้นที่ในหน่วยความจำติดกัน เท่ากับcapaciity +
+เท
+่่กับ
+เท่ากกับชนิดข้้อมู
+เก็บaddress ของหน่วยความจำตำแหน่่งท
+ี่0 ไว้ใน data
+member
+/
+เก็บค่
+่าอไว้ใน data member ชื่อ curren
+Mr insert
+↳
+ขั้นต
+1. สร้างhole- ที่ต้ำแหน่่งก
+array
+2. วันทำงงานเเป็นรอบ
+วนใส
+่x ไปใน
+-การเลื่อน hole ขึ
+3. สอดคล้องใส
+่x เข้้าไปกับ heap pa
+·
+ใส่ข้อมูลชั้นล่างสุดจจากซ้ายไปข
+อา·อร้าย!ช่วงน้ออก
+
+--- PAGE 11 ---
+การ
+delete Min
+ลบค่่่ำน้อย
+
+--- PAGE 13 ---
+Sorting
+Preliminaries ข้อตกลงเชื้อ
+-ส่่งข้อมูลแบบ Ar
+-เปรียบเทียบนอัยกว่ามา
+เวลาพูดถ
+ถึงกการเรียงลำดับทั่วไป
+เรียงจาก
+Insertion
+Sort
+Ps Position ในแต่ละรอบมีการเคลื่อ
+กกี่ร
+
+--- PAGE 14 ---
+จงเขียนค
+่าในตัวแปร tmp ขณะททำงานรอบท
+⑤
+ตัวแปรtmpขณะหางานรอบท
+ี
+3 case in algorithms เขียนแก้ไขปั
+· Best Case กรณีทที่ดีที่สุด สำหรับ insertionSortตัวเลข6 ตัว
+ข้อมูล
+Input เป็นข้อมูลทีี่บั
+· Worst Case กรณีที่แย่ที่สุด สำหรับ iinsertionSort ตัวเลขเตัว
+ข้อมูล
+Input เป็นข้อ
+มากไปน้อ
+· Average Case ข้อมมูลทั่ว
+Shellsort
+
+--- PAGE 15 ---
+Graphs
+③> คสพระหว่างจุดกับ
+Os ( V ,El
+vivertices) - จุด
+5ledges ) = เส
+>
+adjacent อยู่ตัดจาก เช่น (v , W >=
+w
+อยูถด
+I adjacent * เพราะะมีคู่อันตับ
+แต่่ 5ไม่ได้ adjacent กับI
+เพร
+ระไม่มีคู่อัน
+length . จำนววนของedge
+/
+ถ้าไม่มี pathe edges
+:เสื้
+path - เส้นทา
+simple path คือทุก vert
+↳
+↳
+แตกตางกันยกเววนจุดเริิ่มต้นกกับ
+
+--- PAGE 16 ---
+cycle จุดเริ่มต้นกับจจุดสิ้นสุ
+acyclic ไม่มี cycles ไม่สามมารรถเดินกลับ
+จุดเรมตชือ
+ผูสถถ้ามี path
+ระ
+vertex
+
+--- PAGE 17 ---
+Representation of Graph
+jacency
+Matrix ใช้Array สองม
+Vertex อาจจะเป็นnod
+Ad
+สูตร OLIV12
+Adjacency List ต้กราฟไม่หนาแ
+OCIEI +IVIS =
+เส้น +จ
+ex กำหนดDirectGraph h ม
+มี 10 vertex มี edge
+20
+ถามว่า Adjacency list s
+30
+
+--- PAGE 18 ---
+Topological Sort ลำดับของ vert
+* ~มcycle เขียนไม
+cycles จนรอบ
+M
+↳
+*ตองไม่่มีกการรวนกลับมาจุดเ
+หน้า!
+
+--- PAGE 19 ---
+Shortest Path Algorithms เส้นทางที่สั
+Single Shortest Path problem จุดเริ่มตน้มีจุดเดียว': ไม่สามารถให้ วdg
+หน้า:
+Unweighted shortest
+Paths
+ไมคิดค่าน
+มี cycl
+ตััวไปตัวเอง
+0
+โทโป ไมม่มี eNge
+Dr (distance > >
+ระยะทาง
+99
+Pr i path ) > เส้นทาง:
+⑦
+⑤

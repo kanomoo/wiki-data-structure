@@ -1,0 +1,319 @@
+--- PAGE 1 ---
+Representation of Graph 
+Adjacency Matrix 
+u\v 
+1
+2
+3
+4 
+5
+6
+7
+1 
+0 
+1 
+1 
+1 
+0 
+0 
+0 
+2 
+0 
+0 
+0 
+1 
+1 
+0 
+0 
+3 
+0 
+0 
+0 
+0 
+0 
+1 
+0 
+4 
+0 
+0 
+1 
+0 
+0 
+1 
+1 
+5 
+0 
+0 
+0 
+1 
+0 
+0 
+1 
+6
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+7 
+0 
+0 
+0 
+0 
+0 
+1 
+0 
+Adjacency Matrix ไม่นิยมใช้ เพราะ เปลืองเนือทีในหน่วยความจํา 
+ 
+49 ช่อง มีช่องทีเป็น 1 อยู่ 12 ช่อง 
+100 ช่อง มีช่องทีเป็น 1 อยู่ = = 24.48 % 
+มีช่องทีเป็น 0 หรือไม่ได้ใช้งาน อยู่ 75.52 % 
+What percentage of the memory space is used for entries with 
+a value of 1, and what percentage is used for entries with 
+a value of 0?
+
+--- PAGE 2 ---
+Topological Sort 
+ 
+ 
+ 
+1. แปลงภาพกราฟ มาเป็น adjacency list ก่อน 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+V
+
+--- PAGE 3 ---
+2. Indegree Array อะเรย์ของจํานวน edge ทีชีเข้าหา vertex 
+v
+เริมต้น 
+รอบที 1 รอบที รอบที รอบที รอบที รอบที 
+q 
+1
+ 
+ 
+ 
+ 
+ 
+6 
+2
+ 
+ 
+ 
+ 
+5
+3
+ 
+ 
+ 
+ 
+4
+4
+ 
+ 
+ 
+ 
+ 
+3
+5
+ 
+ 
+ 
+ 
+2
+6
+ 
+ 
+ 
+ 
+1
+7
+ 
+ 
+ 
+ 
+0
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Currentsize=? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Front= ? back =? 
+ 
+ 
+Indegree array q.enqueue() 
+V= 
+for each w adjacent to v W= 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+จงเขียน Topological Sort ทีเป็นผลลัพธ์ จากกราฟดังกล่าว 
+After computing the topological sort, write down the 
+topological ordering that is the solution for this graph. 
+ 
+ 
+ 
+ 
+W
+
+--- PAGE 4 ---
+Shortest Path 
+1. แปลงภาพกราฟ มาเป็น adjacency list ก่อน 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2. สร้าง อะเรย์สําหรับใช้ในการประมวลผล Shortest Path 
+Known Dist 
+(Dv) 
+Path 
+(Pv) 
+ q 
+1 
+ 
+ 
+ 
+6 
+ 
+2 
+ 
+ 
+ 
+5 
+ 
+3 
+ 
+ 
+ 
+4 
+ 
+4 
+ 
+ 
+ 
+3 
+ 
+5 
+ 
+ 
+ 
+2 
+ 
+6 
+ 
+ 
+ 
+1 
+ 
+7 
+ 
+ 
+ 
+0 
+ 
+ V = front = ? back = ? 
+W = 
+ 
+ 
+ 
+ 
+ 
+ 
+ 2 
+ 1 
+4 
+1 
+2 
+3 
+4 
+ 4 
+ 5 
+ 3 
+5 
+ 7 
+6 
+7 
+ 6 
+ 6 
+6 
+ 5 
+ 7 
+V 
+W
+V 
+if w.dist == INFINITY : 
+ w.dist = v.dist + 1 
+ w.path = v 
+ q.enqueue (w)
+
+--- PAGE 5 ---
+จงหาเส้นทางทีสันทีสุด จาก v3 ไป v5 จาก ตารางทีคํานวณได้ และ ความยาวของเส้นทางนัน 
+เท่ากับเท่าไร 
+After computing the shortest path, write down the length of the 
+shortest path and the shortest path and from Vertex 3 to Vertex 5 from 
+the calculated table. 
+ตอบ The length of the shortest path from Vertex 3 to Vertex 5 = 
+The shortest path from Vertex 3 to Vertex 5 = 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+After computing the shortest path, write down the length of the 
+shortest path and the shortest path and from Vertex 3 to Vertex 7 from 
+the calculated table. 
+ตอบ The length of the shortest path from Vertex 3 to Vertex 7 = 
+The shortest path from Vertex 3 to Vertex 7 = 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+v4 ไป v5

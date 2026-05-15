@@ -1,0 +1,32 @@
+--- PAGE 1 ---
+For example 1: If the initial stack with size=5 is empty and 
+the numbers 5, 10, 15, 20 are pushed in that order and 
+popped 4 times, then 25, 30, 35 are pushed in that order 
+and popped 2 times, what value will remain on the stack? 
+Answer: 
+ 
+For example 2: If the initial stack with size=5 contains the 
+numbers [10, 20, 30, 40] , and is popped twice, then 
+pushed 50, 60 in that order, then popped 3 times, what 
+value will remain on the stack? 
+Answer: 
+ 
+For example 3: if there is no stack's instance variable 
+before, write statements in main program to create the 
+instance variable mystack with size=5. Then push the 
+number 1, 2, 3, 4, 5 in that order,and pop 3 times by 
+using class Stack's methods that we learned. 
+Finally write the element that remain on the stack's 
+instance variable mystack.
+
+--- PAGE 2 ---
+İs
+ 
+Different from
+For example
+ 
+3.1: if there is the exist stack's instance 
+variable mystack with size=5
+ 
+contains the numbers [10,
+20, 30, 40] ...

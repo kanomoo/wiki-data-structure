@@ -1,0 +1,167 @@
+--- PAGE 1 ---
+For Example Selection sort: 
+If there is the exist array(list in python) contains the numbers [64, 25, 12, 22, 11] 
+Write the step for the selection sort () function. In each round, consists of 
+1) what is the minimum, and 
+2) what is the remaining un-sorted are executed under. 
+ 
+ 
+ 
+for i รอบแรก min_idx= 0, i=0 
+จาก for j in range(i + 1, n): 
+ if arr[j] < arr[min_idx]: 
+ min_idx = j 
+ได้ว่า 
+ 
+ 
+รอบที่ 1: 
+1. หาค่าน้อยที่สุด: ในอาร์เรย์ [64, 25, 12, 22, 11] ค่าน้อยที่สุดคือ 11 ซึ่งอยู่ที่ตำแหน่งดัชนี 4 
+2. สลับ: สลับค่าน้อยที่สุด (11) กับสมาชิกตัวแรกของส่วนที่ยังไม่ได้จัดเรียง (64) 
+o ก่อนสลับ: [64, 25, 12, 22, 11] 
+o หลังสลับ: [11, 25, 12, 22, 64] 
+3. ผลลัพธ์: สมาชิกตัวแรก (11) ถูกจัดเรียงแล้ว ตอนนี้ส่วนที่ยังไม่ได้จัดเรียงคือ [25, 12, 22, 64] 
+ 
+ 
+ 
+for i รอบที่ 2 min_idx= 1, i=1 
+แปลว่า ต าแหน่งที่ 0 เรียงแล้ว 
+จาก for j in range(i + 1, n): 
+ if arr[j] < arr[min_idx]: 
+ min_idx = j 
+ได้ว่า 
+ 
+ 
+64 
+25 
+12 
+22 
+11 
+0 
+1 
+2 
+3 
+4 
+11 
+25 
+12 
+22 
+64 
+0 
+1 
+2 
+3 
+4 
+j 
+min_idx 
+64 
+25 
+12 
+22 
+11 
+0 
+1 
+2 
+3 
+4 
+j 
+min_idx 
+j 
+min_idx 
+11 
+25 
+12 
+22 
+64 
+0 
+1 
+2 
+3 
+4 
+j 
+min_idx
+
+--- PAGE 2 ---
+Round 2: 
+1. Find the minimum : From the unsorted array [25, 12, 22, 64] the minimum is 12 at 
+index 2 
+2. Swap: swap the minimum (12) with the first of the unsorted array (25) 
+o Before swap: [11, 25, 12, 22, 64] 
+o After swap : [11, 12, 25, 22, 64] 
+3. Result: Now, 2 elements (11, 12) was sorted. The remaining unsorted array is [25, 22, 64] 
+ 
+ 
+ 
+for i รอบที่ 3 min_idx= 2, i=2 
+แปลว่า ต าแหน่งที่ 0,1 เรียงแล้ว 
+จาก for j in range(i + 1, n): 
+ if arr[j] < arr[min_idx]: 
+ min_idx = j 
+ได้ว่า 
+ 
+ 
+Round 3: 
+1. Find the minimum : From the unsorted array [ ] the minimum is ? at index ? 
+2. Swap: swap the minimum (?) with the first of the unsorted array (?) 
+o Before swap: [ ] เขียนสมาชิกใน array ให้ครบทั้ง 5 ตัว 
+o After swap : [ ] เขียนสมาชิกใน array ให้ครบทั้ง 5 ตัว 
+3. Result: Now, ? elements (? ) was sorted. The remaining unsorted array is[ ] 
+Round 4: 
+1. Find the minimum : From the unsorted array [ ] the minimum is ? at index ? 
+2. Swap: swap the minimum (?) with the first of the unsorted array (?) 
+o Before swap: [ ] เขียนสมาชิกใน array ให้ครบทั้ง 5 ตัว 
+o After swap : [ ] เขียนสมาชิกใน array ให้ครบทั้ง 5 ตัว 
+3. Result: Now, ? elements (? ) was sorted. The remaining unsorted array is[ ] 
+11 
+25 
+12 
+22 
+64 
+0 
+1 
+2 
+3 
+4 
+j 
+min_idx 
+11 
+25 
+12 
+22 
+64 
+0 
+1 
+2 
+3 
+4 
+j 
+min_idx
+
+--- PAGE 3 ---
+Round 5: 
+1. There is only one element [64] mean sorted already. 
+2. Result: Now, all elements were sorted [11, 12, 22, 25, 64]. 
+อย่าลืม for i in range(5): 
+// ค าสั่ง range(5): หมายถึง [0, 1, 2, 3, 4] 
+ print(i) 
+ # ผลลัพธ์: 
+ # 0 
+ # 1 
+ # 2 
+ # 3 
+ # 4 
+ไม่ใช่ 
+ # 1 
+ # 2 
+ # 3 
+ # 4 
+ # 5 
+ 
+ 
+หน้าตาประโยคค าสั่งที่ main 
+my_list = [34, 8, 64, 51, 32, 21] 
+insertion_sort(my_list) 
+print("Result :", my_list) 
+ 
+my_list = [64, 25, 12, 22, 11] 
+selection_sort(my_list) 
+print("Result : ", my_list)

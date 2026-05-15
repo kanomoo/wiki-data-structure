@@ -1,0 +1,212 @@
+--- PAGE 1 ---
+DATA STRUCTURES 
+AND
+ALGORITHMS
+Lecture Notes 5
+Pradit Pitaksathienkul
+
+--- PAGE 2 ---
+2
+ROAD MAP
+TREES
+Definitions and Terminology
+Implementation of Trees
+Tree Traversals
+Binary Trees
+The Search Tree ADT-Binary Search Trees
+
+--- PAGE 3 ---
+3
+TREES: Definition
+Recursive Definition :
+Tree is a collection of nodes
+A tree can be empty
+A tree contains zero or more subtrees T1, T2,… Tk
+connected to a root node by edges
+
+--- PAGE 4 ---
+4
+TREES: Terminology
+Family Tree Terminology
+child F is child of A 
+parent A is the parent of F
+each node is connected to a parent except the root
+sibling nodes with same parents (K, L, M) 
+leaf nodes with no children (P, Q)
+Ancestor / Descendant
+
+--- PAGE 5 ---
+5
+• Path : a sequence of nodes n1, n2, … nk, where ni is the 
+parent of ni+1 1≤i<k , path from node A to node Q is ?
+• Lenght : number of edges on the path (k-1)
+• Depth : depth of ni is the lenght of unique path from the 
+root to ni
+– depth of root is 0 , depth of node F is 1, depth of node M is 2
+– depth of a tree = depth of the deepest leaf
+• Height : height of ni is the lenght of the longest path from 
+ni to a leaf
+– height of a leaf is 0 , height of node E is 2, height of node A is 3
+– height of a tree = height of the root = depth of the tree
+
+--- PAGE 6 ---
+6
+Implementation of Trees 
+1. Each node contains a pointer to each of its children
+
+number of children would be large
+2. Each node contains an array of pointers to its children
+
+number of children may vary greatly (waste of 
+space)
+
+--- PAGE 7 ---
+7
+Implementation of Trees
+3. Each node contains a linked list of the children
+class Node:
+def __init__(self, value):
+self.value = value
+self.firstChild = None
+self.nextSibling = None
+
+--- PAGE 8 ---
+8
+ROAD MAP
+TREES
+Implementation of Trees
+Tree Traversals
+Binary Trees
+The Search Tree ADT-Binary Search Trees
+
+--- PAGE 9 ---
+9
+Tree Traversals
+Pre Order:
+root
+left right
+In Order:
+left
+root right 
+Post Order:
+left
+right root
+
+--- PAGE 10 ---
+10
+ROAD MAP
+TREES
+Implementation of Trees
+Tree Traversals
+Binary Trees
+The Search Tree ADT-Binary Search Trees
+
+--- PAGE 11 ---
+11
+Binary Trees
+Definition : A tree in which nodes have at 
+most two children 
+Generic Binary Tree
+
+--- PAGE 12 ---
+12
+Binary Trees
+Binary Tree 
+Worst case binary tree
+
+--- PAGE 13 ---
+13
+Implementation of Binary Trees
+keep a pointer to left child and right 
+child
+class Node:
+def __init__(self, value):
+self.value = value
+self.left = None
+self.right = None
+
+--- PAGE 14 ---
+14
+Example: Expression Trees
+Leaves contain operands
+Internal nodes contain operators
+Inorder traversal => infix expression
+Preorder traversal => prefix expression
+Postorder traversal => postfix expression
+
+--- PAGE 15 ---
+15
+Expression Trees
+Entire tree represents (a+(b*c))+(((d*e)+f)*g)
+Left subtree represents a+(b*c)
+Right subtree represents ((d*e)+f)*g
+
+--- PAGE 16 ---
+16
+Constructing an Expression Tree
+Algorithm to convert a postfix expresion 
+into an expression tree
+read the expression one symbol at a time.
+if the symbol is operand
+create a one-node tree
+push the tree onto a stack
+if the symbol is operator
+pop two trees T1 and T2 from the stack
+form a new tree whose root is the operator and whose 
+left and right subtrees are T2 and T1 respectively ตามล าดับ
+This new tree is pushed onto the stack
+
+--- PAGE 17 ---
+17
+Example:
+input is ab+cde+**
+First two symbols are 
+operands
+create one-node trees
+push pointers to them onto a 
+stack
+Next + is read
+pointers to trees are poped
+a new tree is formed
+a pointer to it is pushed onto 
+the stack
+[0]
+[1]
+[2]
+[3]
+[4]
+
+--- PAGE 18 ---
+18
+Example:
+input is ab+cde+**
+c, d, e are read
+for each a one-node tree 
+is created
+A pointer to the 
+corresponding tree is 
+pushed onto the stack.
+
+--- PAGE 19 ---
+19
+Example:
+input is ab+cde+**
++ is read
+two trees are merged
+
+--- PAGE 20 ---
+20
+Example:
+input is ab+cde+**
+* is read
+pop two tree pointers 
+and form a new tree 
+with a * as root
+
+--- PAGE 21 ---
+21
+Example:
+input is ab+cde+**
+Last symbol is read
+two trees are merged
+a pointer to the final tree is left on the stack

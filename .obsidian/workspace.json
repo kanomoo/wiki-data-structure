@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "9b6a851bcaebe97f",
+    "type": "split",
+    "children": [
+      {
+        "id": "705b1ed60e7aefc7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "561cf88d081517f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Assignment-1-Linked-List"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5d83b5afa87807a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "85985f5723c3cbe6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2adbe6258aef9c4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "File explorer"
+            }
+          },
+          {
+            "id": "b0e1cc3bcfa0c97e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "ค้นหา"
+            }
+          },
+          {
+            "id": "95592cf6c294fe72",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "บุ๊กมาร์ก"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "b5024202b6773bb8",
+    "type": "split",
+    "children": [
+      {
+        "id": "a040c7884b438c33",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6eb354dd80bfc99e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "แบ็คลิงค์ของ Assignment-1-Linked-List"
+            }
+          },
+          {
+            "id": "bbbe5cfc900d696c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ลิงค์ขาออกของ Assignment-1-Linked-List"
+            }
+          },
+          {
+            "id": "7d856d396caf14e1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "แท็ก"
+            }
+          },
+          {
+            "id": "8e7018385bb322d2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "คุณสมบัติทั้งหมด"
+            }
+          },
+          {
+            "id": "36d97d7edc0c402a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/sources/Assignment-1-Linked-List.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "โครงเรื่องของ Assignment-1-Linked-List"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:เปิด quick switcher": false,
+      "graph:เปิดมุมมองกราฟ": false,
+      "canvas:สร้างผืนผ้าใบใหม่": false,
+      "daily-notes:เปิดโน้ตของวันนี้": false,
+      "templates:แทรกเทมเพลต": false,
+      "command-palette:เปิดกระดานคำสั่ง": false,
+      "bases:สร้างฐานใหม่": false
+    }
+  },
+  "active": "561cf88d081517f8",
+  "lastOpenFiles": [
+    "conductor/build-detailed-source-notes.ps1",
+    "wiki/synthesis/data-structure-complete-exam-notes.md",
+    "wiki/synthesis/past-exam-pattern-bank.md",
+    "wiki/sources/raw-data-structure-source-inventory.md",
+    "conductor/raw-data-structure-inventory.json",
+    "conductor/extracted/โน๊ตอู้ดง_Noteอู้ดง.pdf.txt",
+    "conductor/extracted/สำเนาของ_โจทย์ลองทำบทที่4.pdf.txt",
+    "conductor/extracted/สำเนาของ_แบบฝึกหัดบท4.pdf.txt",
+    "conductor/extracted/สำเนาของ_วิธีการทำตามระดับให้ดูคู่กับชีทบท4.pdf.txt",
+    "conductor/extracted/สำเนาของ_4.pdf.txt",
+    "conductor/extracted/สำเนาของ_2.pdf.txt",
+    "conductor/extracted/สำเนาของ_1.pdf.txt",
+    "conductor/extracted/สำเนาของ_3.pdf.txt",
+    "conductor/extracted/ปีเก่า_สำเนาของ_NW.pdf.txt",
+    "conductor/wiki-audit.md",
+    "wiki/sources/Assignment-1-Linked-List.md",
+    "wiki/concepts/postfix-logic.md",
+    "wiki/concepts/topological-sort.md",
+    "wiki/concepts/linked-list.md",
+    "wiki/sources/Lecture-3-Linked-List.md",
+    "wiki/synthesis/Practice-Implementation-Guide.md",
+    "wiki/synthesis/Data-Structure-Summarization-Tracker.md",
+    "wiki/synthesis/Exam-Preparation-Guide.md",
+    "wiki/synthesis/Data-Structure-2567-Series.md",
+    "skills/obsidian-markdown/SKILL.md",
+    "index.md",
+    "wiki/sources/Assignment-2-Binary-Tree.md",
+    "log.md",
+    "GEMINI.md",
+    "data-structure-roadmap.canvas",
+    "wiki/sources/Lecture-1-Introduction.md",
+    "wiki/sources/Lecture-11-Shortest-Path.md",
+    "wiki/sources/Test-Program-1-Queue.md",
+    "Topological-Sort.md",
+    "postfix-logic.md",
+    "ยังไม่ได้ตั้งชื่อ.canvas",
+    "wiki/sources/Assignment-3-Binary-Heap.md",
+    "wiki/concepts/binary-search-tree.md",
+    "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172709.png",
+    "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172659.png",
+    "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172649.png",
+    "raw/Data structure/ปี67/Assignment 2 Construct Binary Tree/work/Screenshot 2026-02-15 172428.png",
+    "raw/Data structure/ปี67/Assignment 2 Construct Binary Tree/work/Screenshot 2026-02-15 172409.png",
+    "raw/Data structure/ปี67/Assignment 1 Linked List/Assign 1.1_ Linked List (For students who do their homework incorrectly)/Screenshot 2026-02-15 171901.png",
+    "raw/Data structure/ปี67/Assignment 1 Linked List/Assign 1.1_ Linked List (For students who do their homework incorrectly)/Screenshot 2026-02-15 171848.png",
+    "raw/Data structure/ปี67/Test Program 2_ Sorting/Screenshot 2026-02-15 173348.png",
+    "raw/Data structure/ปี67/Test Program 1_ Queue/Screenshot 2026-02-15 172518.png",
+    "raw/Data structure/ปี67/Assignment 3 Binary Heap/Screenshot 2026-02-15 173116.png"
+  ]
+}

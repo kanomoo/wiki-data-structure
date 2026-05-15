@@ -1,0 +1,94 @@
+--- PAGE 1 ---
+Example for Binary Search Tree: Insert 
+For example 5.1: if there is the exist BinarySearchTree's 
+instance variable name bst contains the numbers [1, 2, 3, 
+4, 6, 8] (In-order traversal) as the image following: 
+ 
+Write the steps for the _insert_recursive() function when 
+insert 5 into the instance variable bst. In each 
+round,consists of 
+1) what are the values of the parameters value and 
+current_node of the _insert_recursive() function, and 
+2) what statements are executed under the if-else 
+condition that is checked as true. 
+Each iteration must write 2 things.
+
+--- PAGE 2 ---
+in main program 
+bst = BinarySearchTree() 
+... 
+bst.insert(5) 
+ 
+Answer: 
+Each iteration for the _insert_recursive() function when 
+insert 5 
+First round value = 5 , current_node = 
+_insert_recursive(current_node.left, value) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+round 2: value = 5 , current_node = 
+ 
+round 3: value = 5 , current_node = 
+ 
+ 
+6 
+2 
+4
+
+--- PAGE 3 ---
+round 4: value = 5 , current_node = None 
+if current_node.right is None: is True 
+ current_node.right = Node(value)
+
+--- PAGE 4 ---
+Example for Binary Search Tree: Remove (4), one child. 
+For example 5.2: if there is the exist BinarySearchTree's 
+instance variable name bst contains the numbers [1, 2, 3, 
+4, 6, 8] (In-order traversal) as the image following: 
+ 
+Write the steps for the _delete_recursive() function when 
+remove 4 from the instance variable bst. In each 
+round,consists of 
+1) what are the values of the parameters value and 
+current_node of the _delete_recursive() function, and 
+2) what statements are executed under the if-else 
+condition that is checked as true. 
+Each iteration must write 2 things.
+
+--- PAGE 5 ---
+Answer: 
+ 
+Each iteration for the _delete_recursive() function when 
+remove 4 
+First round value = 4 , current_node = 
+current_node.left = 
+_delete_recursive(current_node.left, value) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+round 2: value = 4 , current_node = 
+current_node.right = 
+ 
+round 3: value = 4 , current_node = 
+elif current_node.right is None: is True 
+ return current_node.left 
+ 
+ 
+6 
+2 
+4

@@ -1,0 +1,178 @@
+--- PAGE 1 ---
+If there is the exist BinaryHeap's instance variable myheap which has 
+10 elements as the Binary Tree following. Write statements in main 
+program to insert the instance variable myheap with input is 14 and 
+write the outputs to array by using class BinaryHeap 's methods that 
+we learned only. แบบที่ 1 
+Write the steps for the insert() function when insert element 14 
+into the instance variable myheap. In each round,consists of 
+1) what are the values of the variable hole, and 
+2) what the comparison under the if-else condition that is checked. 
+Each iteration must write 2 things. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ณ เวลานี้ ตัวแปรออบเจค a มีสมาชิก 10 ตัว 
+ 
+19 
+31 
+24 
+16 
+21 
+13 
+ไม่มีข้อมูล 
+[0] 
+3 
+2 
+4 
+5 
+6 
+68 
+65 
+26 
+32 
+31 
+ 
+[7] 
+8 
+10 
+9 
+11 
+12 
+ 
+1 
+hole 
+Left 
+Right
+
+--- PAGE 2 ---
+def insert(self, x): 
+ if self.is_full(): 
+ print("Heap is full") 
+ return 
+ self.currentSize += 1 
+ hole = self.currentSize 
+ # การหา parent: hole // 2 
+ while hole > 1 and x < self.array[hole // 2]: 
+ self.array[hole] = self.array[hole // 2] 
+ hole //= 2 
+ self.array[hole] = x 
+การท างานในฟังก์ชัน insert 
+hole = 11 
+while loop รอบที่ 1 hole = ?, ? > 1 จริง เปรียบเทียบ ? < ? 
+while loop รอบที่ 2 hole = ?, ? > 1 จริง เปรียบเทียบ ? < ? 
+while loop รอบที่ 3 hole = ? , ? > 1 จริง เปรียบเทียบ ? < ? 
+ออกจาก while loop ตัวแปร hole มีค่า เท่ากับเท่าไร = ? 
+while loop ท างานกี่รอบ ? รอบ ให้ดูว่า ประโยคค าสั่งที่อยู่ใน while loop ท างานกี่รอบ นั่นเอง
+
+--- PAGE 3 ---
+def delete_min(self): 
+ if self.is_empty(): 
+ print("Heap is empty") 
+ return 
+ min_item = self.array[1] 
+ self.array[1] = self.array[self.currentSize] 
+ self.currentSize -= 1 
+ self._percolate_down(1) 
+ return min_item 
+ 
+def _percolate_down(self, hole): 
+ temp = self.array[hole] 
+ while hole * 2 <= self.currentSize: 
+ child = hole * 2 
+ if child != self.currentSize and self.array[child + 1] < self.array[child]: 
+ child += 1 
+ if self.array[child] < temp: 
+ self.array[hole] = self.array[child] 
+ else: 
+ break 
+ hole = child 
+ self.array[hole] = temp
+
+--- PAGE 4 ---
+การท างานในฟังก์ชัน percolateDown 
+hole = 1 
+tmp = 
+while loop รอบที่ 1 hole = , <= 10 child = (Left Child) เปรียบเทียบ < 
+while loop รอบที่ 2 hole =, child = เปรียบเทียบ < ไม่ท ำ child++; 
+while loop รอบที่ 3 hole =, child = เปรียบเทียบ < ท ำ child++; 
+while loop รอบที่ 4 hole = , child = ? 
+ 
+ออกจาก while loop ตัวแปร child มีค่า เท่ากับเท่าไร = ? 
+while loop ท างานกี่รอบ ? รอบ

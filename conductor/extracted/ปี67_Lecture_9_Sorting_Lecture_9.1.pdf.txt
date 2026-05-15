@@ -1,0 +1,16 @@
+--- PAGE 1 ---
+10
+Bubble Sort
+
+--- PAGE 2 ---
+11
+def bubble_sort(arr):
+n = len(arr) 
+for i in range(n):
+last_index = n - 1 - i
+for j in range(last_index):
+if arr[j] > arr[j + 1]:
+temp = arr[j]
+arr[j] = arr[j + 1]
+arr[j + 1] = temp 
+//Bubble sort routine

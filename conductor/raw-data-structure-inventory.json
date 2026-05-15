@@ -1,0 +1,489 @@
+[
+  {
+    "path": "raw/Data structure/Python_Oop.pdf",
+    "pages": 52,
+    "text_chars": 10269,
+    "extract_file": "conductor/extracted/Python_Oop.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 2 Construct Binary Tree/Assign 2 Binary Tree.pdf",
+    "pages": 2,
+    "text_chars": 963,
+    "extract_file": "conductor/extracted/ปี67_Assignment_2_Construct_Binary_Tree_Assign_2_Binary_Tree.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 3 Binary Heap/Assignment 3 Inclass.pdf",
+    "pages": 4,
+    "text_chars": 1489,
+    "extract_file": "conductor/extracted/ปี67_Assignment_3_Binary_Heap_Assignment_3_Inclass.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 4 Shortest Path/For Example Graph.pdf",
+    "pages": 5,
+    "text_chars": 2423,
+    "extract_file": "conductor/extracted/ปี67_Assignment_4_Shortest_Path_For_Example_Graph.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 1 Introduction/Lecture 1 Introduction.pdf",
+    "pages": 15,
+    "text_chars": 3390,
+    "extract_file": "conductor/extracted/ปี67_Lecture_1_Introduction_Lecture_1_Introduction.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 10 Graph/Lecture 10 Graph.pdf",
+    "pages": 15,
+    "text_chars": 3833,
+    "extract_file": "conductor/extracted/ปี67_Lecture_10_Graph_Lecture_10_Graph.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 10 Graph/Topological sort.pdf",
+    "pages": 6,
+    "text_chars": 1913,
+    "extract_file": "conductor/extracted/ปี67_Lecture_10_Graph_Topological_sort.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 11 Shortest path/For Example Graph.pdf",
+    "pages": 5,
+    "text_chars": 2423,
+    "extract_file": "conductor/extracted/ปี67_Lecture_11_Shortest_path_For_Example_Graph.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 11 Shortest path/Lecture 11 Shortest path.pdf",
+    "pages": 14,
+    "text_chars": 2908,
+    "extract_file": "conductor/extracted/ปี67_Lecture_11_Shortest_path_Lecture_11_Shortest_path.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 2 Review Python/Lecture 2 Review Python.pdf",
+    "pages": 12,
+    "text_chars": 2636,
+    "extract_file": "conductor/extracted/ปี67_Lecture_2_Review_Python_Lecture_2_Review_Python.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 3 Linked List/For example.pdf",
+    "pages": 2,
+    "text_chars": 1112,
+    "extract_file": "conductor/extracted/ปี67_Lecture_3_Linked_List_For_example.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 3 Linked List/Lecture 3 Linked List.pdf",
+    "pages": 30,
+    "text_chars": 6312,
+    "extract_file": "conductor/extracted/ปี67_Lecture_3_Linked_List_Lecture_3_Linked_List.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 4 Stack/For example Stack.pdf",
+    "pages": 2,
+    "text_chars": 992,
+    "extract_file": "conductor/extracted/ปี67_Lecture_4_Stack_For_example_Stack.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 4 Stack/Lecture 4 Stack.pdf",
+    "pages": 16,
+    "text_chars": 3425,
+    "extract_file": "conductor/extracted/ปี67_Lecture_4_Stack_Lecture_4_Stack.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 4 Stack/Postfix Expression.pdf",
+    "pages": 4,
+    "text_chars": 2276,
+    "extract_file": "conductor/extracted/ปี67_Lecture_4_Stack_Postfix_Expression.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 4 Stack/postfix.pdf",
+    "pages": 6,
+    "text_chars": 9381,
+    "extract_file": "conductor/extracted/ปี67_Lecture_4_Stack_postfix.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 5 Tree/For example Binary Tree.pdf",
+    "pages": 3,
+    "text_chars": 663,
+    "extract_file": "conductor/extracted/ปี67_Lecture_5_Tree_For_example_Binary_Tree.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 5 Tree/Lecture 5 Tree.pdf",
+    "pages": 21,
+    "text_chars": 4122,
+    "extract_file": "conductor/extracted/ปี67_Lecture_5_Tree_Lecture_5_Tree.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 5.1 Binary Search Tree/For example Binary Search Tree std delete round 4 in insert_s step.pdf",
+    "pages": 5,
+    "text_chars": 2075,
+    "extract_file": "conductor/extracted/ปี67_Lecture_5.1_Binary_Search_Tree_For_example_Binary_Search_Tree_std_delete_round_4_in_insert_s_step.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 5.1 Binary Search Tree/Lecture 5.1add in method delete.pdf",
+    "pages": 12,
+    "text_chars": 2799,
+    "extract_file": "conductor/extracted/ปี67_Lecture_5.1_Binary_Search_Tree_Lecture_5.1add_in_method_delete.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 5.1 Binary Search Tree/removebst.pdf",
+    "pages": 2,
+    "text_chars": 3860,
+    "extract_file": "conductor/extracted/ปี67_Lecture_5.1_Binary_Search_Tree_removebst.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 5.2 Binary Search Tree Remove/Example for Binary Search Tree remove 2 std.pdf",
+    "pages": 4,
+    "text_chars": 1315,
+    "extract_file": "conductor/extracted/ปี67_Lecture_5.2_Binary_Search_Tree_Remove_Example_for_Binary_Search_Tree_remove_2_std.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 5.2 Binary Search Tree Remove/Lecture 5.2 Binary Search Tree (Remove node which has 2 children).pdf",
+    "pages": 5,
+    "text_chars": 814,
+    "extract_file": "conductor/extracted/ปี67_Lecture_5.2_Binary_Search_Tree_Remove_Lecture_5.2_Binary_Search_Tree_Remove_node_which_has_2_children_.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 7 Hashing/Lecture 7 Hashing.pdf",
+    "pages": 20,
+    "text_chars": 4497,
+    "extract_file": "conductor/extracted/ปี67_Lecture_7_Hashing_Lecture_7_Hashing.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 8 Priority Queue (Heap)/Lecture 8 Priority Queue (Heap).pdf",
+    "pages": 10,
+    "text_chars": 2125,
+    "extract_file": "conductor/extracted/ปี67_Lecture_8_Priority_Queue_Heap_Lecture_8_Priority_Queue_Heap_.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 8.1 Priority Queue (Insert and deleteMin)/For example Binary Heap.pdf",
+    "pages": 4,
+    "text_chars": 2567,
+    "extract_file": "conductor/extracted/ปี67_Lecture_8.1_Priority_Queue_Insert_and_deleteMin_For_example_Binary_Heap.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 8.1 Priority Queue (Insert and deleteMin)/Lecture 8.1 Priority Queue (Insert and deleteMin).pdf",
+    "pages": 12,
+    "text_chars": 2438,
+    "extract_file": "conductor/extracted/ปี67_Lecture_8.1_Priority_Queue_Insert_and_deleteMin_Lecture_8.1_Priority_Queue_Insert_and_deleteMin_.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 9 Sorting/For Example Bubble sort.pdf",
+    "pages": 2,
+    "text_chars": 1957,
+    "extract_file": "conductor/extracted/ปี67_Lecture_9_Sorting_For_Example_Bubble_sort.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 9 Sorting/For Example Selection sort.pdf",
+    "pages": 3,
+    "text_chars": 2956,
+    "extract_file": "conductor/extracted/ปี67_Lecture_9_Sorting_For_Example_Selection_sort.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 9 Sorting/Lecture 9 Sorting.pdf",
+    "pages": 9,
+    "text_chars": 1959,
+    "extract_file": "conductor/extracted/ปี67_Lecture_9_Sorting_Lecture_9_Sorting.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 9 Sorting/Lecture 9.1.pdf",
+    "pages": 2,
+    "text_chars": 253,
+    "extract_file": "conductor/extracted/ปี67_Lecture_9_Sorting_Lecture_9.1.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 9 Sorting/Short note Insertion sort.pdf",
+    "pages": 3,
+    "text_chars": 2022,
+    "extract_file": "conductor/extracted/ปี67_Lecture_9_Sorting_Short_note_Insertion_sort.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Lecture 9 Sorting/หมายเหตุ ในหัวข้อ insertion sort.pdf",
+    "pages": 2,
+    "text_chars": 1006,
+    "extract_file": "conductor/extracted/ปี67_Lecture_9_Sorting_หมายเหตุ_ในหัวข้อ_insertion_sort.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/planstd060243106.pdf",
+    "pages": 2,
+    "text_chars": 1355,
+    "extract_file": "conductor/extracted/ปี67_planstd060243106.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/cdn.fbsbx.com (1).pdf",
+    "pages": 14,
+    "text_chars": 14043,
+    "extract_file": "conductor/extracted/ปีเก่า_cdn.fbsbx.com_1_.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/Data structure & Algorithm.pdf",
+    "pages": 31,
+    "text_chars": 20304,
+    "extract_file": "conductor/extracted/ปีเก่า_Data_structure_Algorithm.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/midterm1.pdf",
+    "pages": 17,
+    "text_chars": 707,
+    "extract_file": "conductor/extracted/ปีเก่า_midterm1.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ assign3.pdf",
+    "pages": 1,
+    "text_chars": 638,
+    "extract_file": "conductor/extracted/ปีเก่า_สำเนาของ_assign3.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ Assignment 4.pdf",
+    "pages": 2,
+    "text_chars": 814,
+    "extract_file": "conductor/extracted/ปีเก่า_สำเนาของ_Assignment_4.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ DataStrucFinal2-xxAnd2-61-1.pdf",
+    "pages": 15,
+    "text_chars": 12726,
+    "extract_file": "conductor/extracted/ปีเก่า_สำเนาของ_DataStrucFinal2-xxAnd2-61-1.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ Db.pdf",
+    "pages": 21,
+    "text_chars": 5859,
+    "extract_file": "conductor/extracted/ปีเก่า_สำเนาของ_Db.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ Noteอู้ดง.pdf",
+    "pages": 23,
+    "text_chars": 23772,
+    "extract_file": "conductor/extracted/ปีเก่า_สำเนาของ_Noteอู้ดง.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ NW.pdf",
+    "pages": 28,
+    "text_chars": 7253,
+    "extract_file": "conductor/extracted/ปีเก่า_สำเนาของ_NW.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ  3.pdf",
+    "pages": 30,
+    "text_chars": 6312,
+    "extract_file": "conductor/extracted/สำเนาของ_3.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ  4.1.pdf",
+    "pages": 1,
+    "text_chars": 0,
+    "extract_file": null
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ  5.2.pdf",
+    "pages": 1,
+    "text_chars": 0,
+    "extract_file": null
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ  7.pdf",
+    "pages": 1,
+    "text_chars": 0,
+    "extract_file": null
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ  8.pdf",
+    "pages": 1,
+    "text_chars": 0,
+    "extract_file": null
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ 1.pdf",
+    "pages": 15,
+    "text_chars": 3390,
+    "extract_file": "conductor/extracted/สำเนาของ_1.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ 2.pdf",
+    "pages": 12,
+    "text_chars": 2636,
+    "extract_file": "conductor/extracted/สำเนาของ_2.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ 4.pdf",
+    "pages": 16,
+    "text_chars": 3425,
+    "extract_file": "conductor/extracted/สำเนาของ_4.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ 5.1.pdf",
+    "pages": 1,
+    "text_chars": 0,
+    "extract_file": null
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ 5.pdf",
+    "pages": 1,
+    "text_chars": 0,
+    "extract_file": null
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ วิธีการทำตามระดับให้ดูคู่กับชีทบท4.pdf",
+    "pages": 6,
+    "text_chars": 9381,
+    "extract_file": "conductor/extracted/สำเนาของ_วิธีการทำตามระดับให้ดูคู่กับชีทบท4.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ แบบฝึกหัดบท4.pdf",
+    "pages": 2,
+    "text_chars": 992,
+    "extract_file": "conductor/extracted/สำเนาของ_แบบฝึกหัดบท4.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ โจทย์ลองทำบทที่4.pdf",
+    "pages": 2,
+    "text_chars": 1112,
+    "extract_file": "conductor/extracted/สำเนาของ_โจทย์ลองทำบทที่4.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/โน๊ตอู้ดง/Noteอู้ดง.pdf",
+    "pages": 23,
+    "text_chars": 23772,
+    "extract_file": "conductor/extracted/โน๊ตอู้ดง_Noteอู้ดง.pdf.txt"
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Assign 1.1_ Linked List (For students who do their homework incorrectly)/Screenshot 2026-02-15 171848.png",
+    "type": "image",
+    "bytes": 27391
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Assign 1.1_ Linked List (For students who do their homework incorrectly)/Screenshot 2026-02-15 171901.png",
+    "type": "image",
+    "bytes": 207694
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Screenshot 2026-02-15 171110.png",
+    "type": "image",
+    "bytes": 61851
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Screenshot 2026-02-15 171249.png",
+    "type": "image",
+    "bytes": 115713
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Screenshot 2026-02-15 171601.png",
+    "type": "image",
+    "bytes": 43424
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Screenshot 2026-02-15 171614.png",
+    "type": "image",
+    "bytes": 39820
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Screenshot 2026-02-15 171637.png",
+    "type": "image",
+    "bytes": 20561
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 1 Linked List/Screenshot 2026-02-15 171703.png",
+    "type": "image",
+    "bytes": 27880
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 2 Construct Binary Tree/work/Screenshot 2026-02-15 172409.png",
+    "type": "image",
+    "bytes": 370433
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 2 Construct Binary Tree/work/Screenshot 2026-02-15 172428.png",
+    "type": "image",
+    "bytes": 200270
+  },
+  {
+    "path": "raw/Data structure/ปี67/Assignment 3 Binary Heap/Screenshot 2026-02-15 173116.png",
+    "type": "image",
+    "bytes": 313941
+  },
+  {
+    "path": "raw/Data structure/ปี67/Screenshot 2026-02-15 170708.png",
+    "type": "image",
+    "bytes": 15932
+  },
+  {
+    "path": "raw/Data structure/ปี67/Screenshot 2026-02-15 170858.png",
+    "type": "image",
+    "bytes": 59808
+  },
+  {
+    "path": "raw/Data structure/ปี67/Screenshot 2026-02-15 170939.png",
+    "type": "image",
+    "bytes": 95413
+  },
+  {
+    "path": "raw/Data structure/ปี67/Test Program 1_ Queue/Screenshot 2026-02-15 172518.png",
+    "type": "image",
+    "bytes": 39854
+  },
+  {
+    "path": "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172649.png",
+    "type": "image",
+    "bytes": 98748
+  },
+  {
+    "path": "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172659.png",
+    "type": "image",
+    "bytes": 44239
+  },
+  {
+    "path": "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172709.png",
+    "type": "image",
+    "bytes": 14979
+  },
+  {
+    "path": "raw/Data structure/ปี67/Test Program 2_ Sorting/Screenshot 2026-02-15 173348.png",
+    "type": "image",
+    "bytes": 41033
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ Ass4.1.jpg",
+    "type": "image",
+    "bytes": 191901
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ Ass4.2.jpg",
+    "type": "image",
+    "bytes": 262573
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ Assign3.jpg",
+    "type": "image",
+    "bytes": 282029
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ ข้อที่ 1.jpg",
+    "type": "image",
+    "bytes": 604665
+  },
+  {
+    "path": "raw/Data structure/ปีเก่า/สำเนาของ ข้อที่ 2.jpg",
+    "type": "image",
+    "bytes": 369309
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ Assign 2 Binary Tree.pdf.png",
+    "type": "image",
+    "bytes": 7104
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ For example Binary Search Tree std delete round 4 in insert_s step.pdf.png",
+    "type": "image",
+    "bytes": 4303
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ แบบฝึกหัด4.1.png",
+    "type": "image",
+    "bytes": 5694
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ แบบฝึกหัด5.2.png",
+    "type": "image",
+    "bytes": 2994
+  },
+  {
+    "path": "raw/Data structure/สำเนาของ แบบฝึกหัดบท5.png",
+    "type": "image",
+    "bytes": 4583
+  }
+]
