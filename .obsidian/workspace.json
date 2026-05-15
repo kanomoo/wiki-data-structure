@@ -11,14 +11,10 @@
             "id": "561cf88d081517f8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "raw-data-structure-full-extracted-notes"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "มุมมองกราฟ"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "แบ็คลิงค์ของ raw-data-structure-full-extracted-notes"
+              "title": "แบ็คลิงค์"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ลิงค์ขาออกของ raw-data-structure-full-extracted-notes"
+              "title": "ลิงค์ขาออก"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "โครงเรื่องของ raw-data-structure-full-extracted-notes"
+              "title": "โครงเรื่อง"
             }
           }
         ]
@@ -185,8 +178,9 @@
   },
   "active": "561cf88d081517f8",
   "lastOpenFiles": [
-    "wiki/sources/raw-data-structure-source-inventory.md",
+    "index.md",
     "wiki/sources/raw-data-structure-full-extracted-notes.md",
+    "wiki/sources/raw-data-structure-source-inventory.md",
     "wiki/sources/Lecture-11-Shortest-Path.md",
     "wiki/sources/Lecture-9-Sorting.md",
     "wiki/sources/Lecture-2-Review-Python.md",
@@ -216,7 +210,6 @@
     "wiki/synthesis/Exam-Preparation-Guide.md",
     "wiki/synthesis/Data-Structure-2567-Series.md",
     "skills/obsidian-markdown/SKILL.md",
-    "index.md",
     "log.md",
     "GEMINI.md",
     "data-structure-roadmap.canvas",
