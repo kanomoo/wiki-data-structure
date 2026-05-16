@@ -21,6 +21,9 @@ Introduction to the core principles of Data Structures and Algorithms. Defines t
 - [[wiki-architecture]] (Analogous to the blueprint idea)
 - [[persistent-knowledge]]
 
+## Presentation
+- [Lecture 1 Introduction slides](../../slides/lecture-1-introduction/lecture-1-introduction.html)
+
 ## Detailed Raw Source Integration
 
 ส่วนนี้เติมจาก raw material ใน `raw/Data structure` เพื่อให้ source page นี้เป็นหน้าใช้งานจริงตามหลัก LLM Wiki: อ่านแล้วรู้ที่มา, เห็น implementation logic, และโยงกลับไปตรวจต้นฉบับได้ทันที.

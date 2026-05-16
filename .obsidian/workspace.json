@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
+                "file": "wiki/sources/raw-data-structure-source-inventory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "raw-data-structure-full-extracted-notes"
+              "title": "raw-data-structure-source-inventory"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
+                "file": "wiki/sources/raw-data-structure-source-inventory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "แบ็คลิงค์ของ raw-data-structure-full-extracted-notes"
+              "title": "แบ็คลิงค์ของ raw-data-structure-source-inventory"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
+                "file": "wiki/sources/raw-data-structure-source-inventory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ลิงค์ขาออกของ raw-data-structure-full-extracted-notes"
+              "title": "ลิงค์ขาออกของ raw-data-structure-source-inventory"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/sources/raw-data-structure-full-extracted-notes.md",
+                "file": "wiki/sources/raw-data-structure-source-inventory.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "โครงเรื่องของ raw-data-structure-full-extracted-notes"
+              "title": "โครงเรื่องของ raw-data-structure-source-inventory"
             }
           }
         ]
@@ -185,14 +185,20 @@
   },
   "active": "561cf88d081517f8",
   "lastOpenFiles": [
-    "wiki/sources/raw-data-structure-source-inventory.md",
     "wiki/sources/raw-data-structure-full-extracted-notes.md",
     "wiki/sources/Lecture-11-Shortest-Path.md",
+    "wiki/sources/Lecture-1-Introduction.md",
+    "conductor/cleanup-checklist.md",
+    "fix_wiki.py",
+    "wiki/sources/Lecture-5-Tree.md",
+    "wiki/concepts/stack.md",
+    "wiki/concepts/topological-sort.md",
+    "wiki/synthesis/data-structure-complete-exam-notes.md",
+    "wiki/sources/raw-data-structure-source-inventory.md",
     "sedM0JTat",
     "data-structure-roadmap.canvas",
     "wiki/sources/Assignment-1-Linked-List.md",
     "raw/Data structure/ปี67/Lecture 8.1 Priority Queue (Insert and deleteMin)/For example Binary Heap.pdf",
-    "wiki/synthesis/data-structure-complete-exam-notes.md",
     "wiki/synthesis/Practice-Implementation-Guide.md",
     "index.md",
     "wiki/sources/Lecture-4-Stack.md",
@@ -209,11 +215,6 @@
     "wiki/concepts/hashing.md",
     "wiki/concepts/graph-algorithms.md",
     "wiki/concepts/bst-deletion-advanced.md",
-    "wiki/concepts/binary-search-tree.md",
-    "wiki/sources/Lecture-1-Introduction.md",
-    "wiki/sources/Assignment-4-Shortest-Path.md",
-    "wiki/sources/Assignment-3-Binary-Heap.md",
-    "wiki/sources/Assignment-2-Binary-Tree.md",
     "conductor/build-detailed-source-notes.ps1",
     "conductor/raw-data-structure-inventory.json",
     "conductor/extracted/โน๊ตอู้ดง_Noteอู้ดง.pdf.txt",
@@ -221,7 +222,6 @@
     "conductor/extracted/สำเนาของ_แบบฝึกหัดบท4.pdf.txt",
     "conductor/extracted/สำเนาของ_วิธีการทำตามระดับให้ดูคู่กับชีทบท4.pdf.txt",
     "conductor/extracted/สำเนาของ_4.pdf.txt",
-    "conductor/extracted/สำเนาของ_2.pdf.txt",
     "ยังไม่ได้ตั้งชื่อ.canvas",
     "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172709.png",
     "raw/Data structure/ปี67/Test Program 1_ Queue/work/Screenshot 2026-02-15 172659.png",
