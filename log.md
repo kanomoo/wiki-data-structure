@@ -59,3 +59,10 @@ Chronological record of wiki operations.
 - Expanded concept pages with mental models, invariants, implementation patterns, complexity/trade-offs, practice checklists, and source connections.
 - Strengthened previously thin meta pages [[persistent-knowledge]] and [[wiki-architecture]] so they document the LLM Wiki workflow directly.
 - Linked concept pages back to enriched source pages such as [[Lecture-4-Stack]], [[Lecture-10-Graph]], [[Lecture-11-Shortest-Path]], assignments, and synthesis notes.
+
+## [2026-05-16] cleanup | Raw Data Structure Index Readability
+- Reworked [[raw-data-structure-source-inventory]] into a readable topic map with usage guidance, grouped source index, thumbnails, and links to relevant wiki pages.
+- Reworked [[raw-data-structure-full-extracted-notes]] into a searchable extracted-text archive with quick navigation, reading guide, topic sections, and collapsible per-file raw text.
+- Preserved full coverage: 86 raw files in the inventory and 51 extracted-text PDFs in the full notes archive.
+- Polished Obsidian rendering: removed large tables/thumbnails, replaced raw-file wikilinks with normal markdown file links to avoid red unresolved links, used callout cards/foldouts, and cleaned common Thai OCR spacing artifacts such as `ท า`, `ค า`, and `ส า`.
+- Rebuilt the full extracted notes as cleaned reading text instead of raw code blocks: joined broken OCR line wraps, normalized Thai Sara Am/composing marks, removed stray bullet glyphs/ligatures, and suppressed two heavily corrupted Noteอู้ดง OCR sections in favor of source links plus clean study-note references.
