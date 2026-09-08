@@ -44,6 +44,7 @@
 - [[Test-Program-2-Sorting|Test 2: Sorting]]
 - [[Practice-Implementation-Guide|Practice Implementation Guide]]
 - [[Exam-Preparation-Guide|Exam Preparation Guide]]
+- [[Exam-Preparation-and-Classroom-Review|Classroom Exam Prep & Photo Archive (2569)]]
 - [[past-exam-pattern-bank|Past Exam Pattern Bank]]
 
 ## 🧠 Synthesis & Analysis

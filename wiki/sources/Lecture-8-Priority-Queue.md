@@ -18,10 +18,39 @@ Introduction to Priority Queues and their implementation using Binary Heaps.
 - **Array Representation**: Because it's a complete tree, it maps perfectly to an array:
     - Left child of $i$ is $2i$.
     - Right child of $i$ is $2i + 1$.
-    - Parent of $i$ is $i // 2$.
+    - Parent of $i$ is $\lfloor i / 2 \rfloor$ (ตัดเศษทิ้ง เช่น $7/2 = 3.5 \rightarrow 3$).
+
+### 3. เจาะลึกคำเตือนและแนวข้อสอบจากผู้สอน (Lecturer Insights & Exam Traps by อ.ประดิษฐ์)
+จากการบรรยายในห้องเรียนและถอดเทปเสียง (Lecture Voice Archive: 2026-09-02):
+
+> [!WARNING] จุดดักคะแนนสอบ 1: ตำแหน่ง Index ใน Array (Root อยู่ที่ 1 เสมอ!)
+> - **คำเตือนจากอาจารย์:** "สมการนี้จะใช้ได้ก็ต่อเมื่อ Root อยู่ใน Array ตำแหน่งที่ 1 ไม่ใช่ตำแหน่งที่ 0! ถ้าเริ่มต้นที่ตำแหน่ง 0 สมการนี้จะใช้ไม่ได้เลย! ในการสอบและการเขียนโค้ด ให้จองขนาด Array เป็น `capacity + 1` และเว้น index 0 ไว้เสมอ"
+
+> [!INFO] จุดดักคะแนนสอบ 2: การคำนวณ Parent และการตัดเศษทิ้ง (Truncation)
+> - สูตรการหา Parent: $\text{Parent}(i) = \lfloor i / 2 \rfloor$
+> - **ข้อควรระวังในห้องสอบ:** "เวลาเราคำนวณหา Parent ถ้ามันมีเศษ **ให้ตัดเศษทิ้ง!** เอาแต่เลขจำนวนเต็มมาใช้ เพราะตำแหน่ง Index เป็นเลขจำนวนเต็ม ไม่มีทศนิยม เช่น ตำแหน่งที่ 7 $\rightarrow 7/2 = 3.5 \rightarrow$ ตัด .5 ทิ้งเหลือ 3 ดังนั้น Parent คือโหนดที่ตำแหน่ง 3 (ไม่ใช่การปัดเศษขึ้น!)"
+
+```mermaid
+graph TD
+    subgraph TreeView["Tree Representation"]
+        A["1: Root (A)"] --> B["2: Left (B)"]
+        A --> C["3: Right (C)"]
+        B --> D["4: Left (D)"]
+        B --> E["5: Right (E)"]
+        C --> F["6: Left (F)"]
+        C --> G["7: Right (G)"]
+    end
+```
+
+| Property | Formula | ตัวอย่างที่ $i=3$ (Node C) | ตัวอย่างที่ $i=7$ (Node G) |
+| :--- | :--- | :--- | :--- |
+| **Left Child** | $2i$ | $2 \times 3 = 6$ (Node F) | - |
+| **Right Child** | $2i + 1$ | $2 \times 3 + 1 = 7$ (Node G) | - |
+| **Parent** | $\lfloor i/2 \rfloor$ | $\lfloor 3/2 \rfloor = 1$ (Node A) | $\lfloor 7/2 \rfloor = 3$ (Node C) *(ตัด .5 ทิ้ง)* |
 
 ## Related Concepts
 - [[heap-priority-queue]]
+- [[Exam-Preparation-and-Classroom-Review|ข้อสอบและสรุปแนวข้อสอบจากห้องเรียน (Exam Prep)]]
 
 ## Detailed Raw Source Integration
 

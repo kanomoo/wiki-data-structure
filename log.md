@@ -66,3 +66,11 @@ Chronological record of wiki operations.
 - Preserved full coverage: 86 raw files in the inventory and 51 extracted-text PDFs in the full notes archive.
 - Polished Obsidian rendering: removed large tables/thumbnails, replaced raw-file wikilinks with normal markdown file links to avoid red unresolved links, used callout cards/foldouts, and cleaned common Thai OCR spacing artifacts such as `ท า`, `ค า`, and `ส า`.
 - Rebuilt the full extracted notes as cleaned reading text instead of raw code blocks: joined broken OCR line wraps, normalized Thai Sara Am/composing marks, removed stray bullet glyphs/ligatures, and suppressed two heavily corrupted Noteอู้ดง OCR sections in favor of source links plus clean study-note references.
+
+## [2026-09-09] audio & visual | Transcribe Audio & Integrate Classroom Photo Archive
+- Transcribed 9 audio recordings from 2026-09-02 lecture sessions by Prof. Pradit Pitaksathienkul.
+- Analyzed 60 classroom photos in `DSA-pic/` (Aug 26 Midterm Solutions & Sep 2 Hashing/Heap lectures).
+- Updated [[Lecture-7-Hashing]] with verbatim lecturer insights: collision counting traps (total 7 vs 14), wrap around mod logic, double hashing parameter $R$ variability ($R < TableSize$), and final exam Rehashing Load Factor calculation.
+- Updated [[Lecture-8-Priority-Queue]] with array indexing rules (1-based index, child $2i, 2i+1$, parent $\lfloor i/2 \rfloor$ with truncation).
+- Created [[Exam-Preparation-and-Classroom-Review]] consolidating midterm walkthrough and final exam traps.
+- Registered new exam prep page in [[index.md]].

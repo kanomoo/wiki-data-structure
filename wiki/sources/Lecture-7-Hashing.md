@@ -41,6 +41,36 @@ If a collision occurs, try alternative cells: $h_i(x) = (hash(x) + F(i)) \mod Ta
 ### 3. Rehashing
 When the table becomes too full (typically Load Factor $\lambda > 0.5$ or $0.7$), a new table is created with a size roughly **double** the original (the next prime number), and all elements are re-inserted.
 
+### 4. เจาะลึกคำเตือนและแนวข้อสอบจากผู้สอน (Lecturer Insights & Exam Traps by อ.ประดิษฐ์)
+จากการบรรยายในห้องเรียนและถอดเทปเสียงอย่างละเอียด (Lecture Voice Archive: 2026-09-02):
+
+> [!WARNING] จุดดักคะแนนสอบ 1: การนับจำนวนครั้งที่ชน (Collision Count & Resolving)
+> - **คำเตือนจาก อ.ประดิษฐ์:** "เมื่อใส่ข้อมูลครบ 5 ตัวแล้ว มีการชนกันและแก้การชนกัน รวมทั้งสิ้นกี่ครั้ง? ตัวอย่างเช่น 69 ชน 3 ครั้ง, 58 ชน 3 ครั้ง, 49 ชน 1 ครั้ง **ให้นับรวมคือ 7 ครั้ง! ห้ามนับแยกชน 7 แก้ 7 แล้วตอบ 14 ครั้งเด็ดขาด! ถ้าตอบ 14 จะได้ 0 คะแนนทันที!**"
+> - การนับ Probe หรือ Collision ให้ยึดจำนวนครั้งที่เกิดการกระแทกเพื่อหาช่องว่างใหม่รวมทั้งหมด
+
+> [!INFO] จุดดักคะแนนสอบ 2: นิยามของ Wrap Around ใน Hashing
+> - **Concept of Wrap around in Hashing:** "When the key was mapped to the last index of hash table, it go back to the first index of hash table by mod tablesize one more time."
+> - **หลักการในห้องสอบ:** เมื่อตำแหน่งคำนวณหลุดเลยช่องสุดท้ายของตาราง ให้วนกลับมาเริ่มต้นที่ตำแหน่ง 0 ใหม่ โดยการเอาตำแหน่งนั้นมา **$\bmod \text{TableSize}$ อีกหนึ่งรอบ**
+
+> [!IMPORTANT] จุดดักคะแนนสอบ 3: Double Hashing และค่าตัวแปร $R$
+> - สูตรหลัก: $h_i(X) = (\text{hash}_1(X) + F(i)) \bmod \text{TableSize}$ โดย $F(i) = i \times \text{hash}_2(X)$
+> - สูตรฟังก์ชันแฮชที่สอง: $\text{hash}_2(X) = R - (X \bmod R)$
+> - **คำเตือนจากอาจารย์ (เน้นย้ำมาก):** 
+>   - $R$ ต้องเป็นจำนวนเฉพาะ (Prime Number) ที่ **มีค่ามากที่สุด แต่น้อยกว่า TableSize** ($R < \text{TableSize}$)
+>   - **ห้ามจำว่า $R = 7$ เสมอไป!** ในข้อสอบ TableSize จะไม่ใช่ 10 แน่นอน (เช่น ถ้า TableSize = 13 ค่า $R$ จะเป็น 11; ถ้า TableSize = 16 ค่า $R$ จะเป็น 13)
+>   - ข้อกำหนดสำคัญ: $\text{hash}_2(X) \neq 0$ เสมอ เพื่อไม่ให้เกิดการ Probe อยู่กับที่เดิม
+
+> [!CAUTION] จุดออกสอบปลายภาค 4: การคำนวณ Load Factor ($\lambda$) และ Rehashing (อ.บอกออกสอบแน่นอน!)
+> - **คำพูดอาจารย์:** *"สอบปลายภาคมีนะ! คิดเปอร์เซ็นต์นะ! คิดให้เป็นนะครับ ฝากไว้ด้วยนะครับ! วิธีคิดก็เหมือนตอน ป.5 ป.6 เทียบบัญญัติไตรยางค์"*
+> - **การคิดเปอร์เซ็นต์ Load Factor ($\lambda$):**
+>   $$\text{Load Factor } \% = \frac{\text{จำนวนข้อมูลที่ใส่แล้ว (N)} \times 100}{\text{จำนวนช่องทั้งหมด (TableSize)}}$$
+>   - ตัวอย่าง: มี 7 ช่อง ใส่ข้อมูลไป 4 ตัว $\rightarrow \frac{4 \times 100}{7} \approx 57.14\%$
+>   - เมื่อใส่ตัวที่ 5 เข้าไป ความจุจะเกิน 70% ต้องทำการ **Rehashing**
+> - **การเลือกขนาดตารางใหม่ในการ Rehashing:**
+>   - ตารางใหม่ต้องขยายเป็นอย่างน้อย 2 เท่าของเดิม ($2 \times \text{TableSize}$)
+>   - **แต่ต้องเลือกจำนวนเฉพาะตัวแรกที่มากกว่า $2 \times \text{TableSize}$**
+>   - เช่น TableSize เดิม = 7 $\rightarrow 7 \times 2 = 14 \rightarrow$ **ขนาดใหม่ต้องเป็น 17!** (ไม่ใช่ 14, 15, หรือ 16)
+
 ## Complexity/Trade-offs
 - **Average Case**: $O(1)$ for all operations.
 - **Worst Case**: $O(n)$ if all keys hash to the same index (rare with good hash functions).
@@ -49,6 +79,7 @@ When the table becomes too full (typically Load Factor $\lambda > 0.5$ or $0.7$)
 ## Related Pages
 - [[hashing|Hashing Concept Deep-Dive]]
 - [[linked-list|Linked List (used in Separate Chaining)]]
+- [[Exam-Preparation-and-Classroom-Review|ข้อสอบและสรุปแนวข้อสอบจากห้องเรียน (Exam Prep)]]
 
 ## Detailed Raw Source Integration
 
