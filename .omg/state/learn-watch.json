@@ -1,6 +1,6 @@
 {
-  "last_session_id": "65795de6-c8ac-4805-b284-823119f95223",
-  "last_event_key": "65795de6-c8ac-4805-b284-823119f95223:transcript:48d247ef4d0476a60b0b095d6feb56c6bc2d51da26c12410d6e172a50be08948",
+  "last_session_id": "f7ab1ac3-1421-48e5-859a-1edc25ec7d81",
+  "last_event_key": "f7ab1ac3-1421-48e5-859a-1edc25ec7d81:transcript:56238f722cdcb30d5cbdfbe5f015c22d3a8ca2af7a20156b37f3ce49ee51b363",
   "last_prompted_session_id": "",
   "last_reason": "short-session",
   "last_prompted_at": "",
@@ -8,5 +8,5 @@
   "last_actionable_message_count": 0,
   "deep_interview_lock_active": false,
   "deep_interview_lock_source": "C:\\Project\\wiki-data-structure\\.omg\\state\\deep-interview.json",
-  "updated_at": "2026-05-16T05:16:17.703Z"
+  "updated_at": "2026-05-31T10:17:08.615Z"
 }

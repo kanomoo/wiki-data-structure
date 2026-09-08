@@ -12,14 +12,14 @@
 		{"id":"node10","type":"file","file":"wiki/concepts/shortest-path-algorithms.md","x":400,"y":750,"width":300,"height":150,"color":"6"}
 	],
 	"edges":[
-		{"id":"edge1","fromNode":"node1","toNode":"node2","fromSide":"bottom","toSide":"top"},
-		{"id":"edge2","fromNode":"node1","toNode":"node3","fromSide":"bottom","toSide":"top"},
-		{"id":"edge3","fromNode":"node1","toNode":"node4","fromSide":"bottom","toSide":"top"},
-		{"id":"edge4","fromNode":"node4","toNode":"node5","fromSide":"right","toSide":"left"},
-		{"id":"edge5","fromNode":"node1","toNode":"node6","fromSide":"bottom","toSide":"top"},
-		{"id":"edge6","fromNode":"node1","toNode":"node7","fromSide":"bottom","toSide":"top"},
-		{"id":"edge7","fromNode":"node1","toNode":"node8","fromSide":"bottom","toSide":"top"},
-		{"id":"edge8","fromNode":"node1","toNode":"node9","fromSide":"bottom","toSide":"top"},
-		{"id":"edge9","fromNode":"node9","toNode":"node10","fromSide":"bottom","toSide":"top"}
+		{"id":"edge1","fromNode":"node1","fromSide":"bottom","toNode":"node2","toSide":"top"},
+		{"id":"edge2","fromNode":"node1","fromSide":"bottom","toNode":"node3","toSide":"top"},
+		{"id":"edge3","fromNode":"node1","fromSide":"bottom","toNode":"node4","toSide":"top"},
+		{"id":"edge4","fromNode":"node4","fromSide":"right","toNode":"node5","toSide":"left"},
+		{"id":"edge5","fromNode":"node1","fromSide":"bottom","toNode":"node6","toSide":"top"},
+		{"id":"edge6","fromNode":"node1","fromSide":"bottom","toNode":"node7","toSide":"top"},
+		{"id":"edge7","fromNode":"node1","fromSide":"bottom","toNode":"node8","toSide":"top"},
+		{"id":"edge8","fromNode":"node1","fromSide":"bottom","toNode":"node9","toSide":"top"},
+		{"id":"edge9","fromNode":"node9","fromSide":"bottom","toNode":"node10","toSide":"top"}
 	]
 }
