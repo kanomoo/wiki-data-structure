@@ -64,6 +64,40 @@ def bubble_sort(arr):
 - [[Test-Program-2-Sorting|Practice Assessment]]
 - [[Lecture-9.1|Advanced Sorts (Next Lecture)]]
 
+---
+
+## 🎙️ Classroom Live Lecture Updates (16 September 2569) & Verbatim Transcript References
+
+- **ไฟล์ถอดความเสียงคำต่อคำ 100%:**
+  - [[transcripts/20260916_092007.txt|20260916_092007.txt]] (Sorting Convention, Insertion Sort, Position Move Tracing, 3 Cases)
+  - [[transcripts/20260916_102037.txt|20260916_102037.txt]] (Selection Sort, Python range(0) semantics, Bubble Sort Inversion Counting, In-Class Quiz)
+
+### ข้อสอบและจุดเน้นย้ำสดจากห้องเรียน ดร.ประดิษฐ์ พิทักษ์เสถียรกุล:
+1. **Insertion Sort Tracing & Position Move:**
+   - ข้อมูล `[34, 8, 64, 51, 32, 21]`:
+     - After $p=1$: `[8, 34, 64, 51, 32, 21]`, `temp = 8`, Position Move = 1
+     - After $p=2$: `[8, 34, 64, 51, 32, 21]`, `temp = 64`, Position Move = 0
+     - After $p=3$: `[8, 34, 51, 64, 32, 21]`, `temp = 51`, Position Move = 1
+     - After $p=4$: `[8, 32, 34, 51, 64, 21]`, `temp = 32`, Position Move = 3
+     - After $p=5$: `[8, 21, 32, 34, 51, 64]`, `temp = 21`, Position Move = 4
+     - **Total Position Moves = $1 + 0 + 1 + 3 + 4 = \mathbf{9\text{ ครั้ง}}$**
+   - **สูตร Worst Case:** $\frac{N(N-1)}{2}$ สำหรับ 6 ตัวได้ 15, สำหรับ 8 ตัวได้ 28, สำหรับ 10 ตัวได้ 45
+
+2. **Selection Sort & Python `range()` Trap:**
+   - `range(0)` คือ Empty Sequence ที่ไม่จองหน่วยความจำเก็บตัวเลข ไม่ใช่ `None` และไม่ใช่ `[0]`
+   - ต่างกับ `[]` ที่ต้องจอง List Object ในหน่วยความจำ
+
+3. **Bubble Sort Inversion Shortcut (Total Swaps):**
+   - การ Swap แต่ละครั้งกำจัด Inversion ได้ 1 คู่พอดี
+   - นับจำนวนตัวเลขทางขวาที่น้อยกว่าตัวมันเอง
+
+4. **เฉลย In-Class Assignment / Quiz (อาร์เรย์ `[64, 34, 25, 12, 22, 11, 90]`):**
+   - Passes (Outer loop) = $7 - 1 = \mathbf{6\text{ passes}}$
+   - Total Swaps = $5 + 4 + 3 + 1 + 1 + 0 + 0 = \mathbf{14\text{ swaps}}$
+   - Pass 1 Step 4 Compare (64, 22) $\implies$ `[34, 25, 12, 22, 64, 11, 90]`
+   - Pass 1 Result $\implies \mathbf{[34, 25, 12, 22, 11, 64, 90]}$
+   - Swaps after Pass 1 = $\mathbf{5\text{ swaps}}$
+
 ## Detailed Raw Source Integration
 
 ส่วนนี้เติมจาก raw material ใน `raw/Data structure` เพื่อให้ source page นี้เป็นหน้าใช้งานจริงตามหลัก LLM Wiki: อ่านแล้วรู้ที่มา, เห็น implementation logic, และโยงกลับไปตรวจต้นฉบับได้ทันที.

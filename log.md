@@ -74,3 +74,11 @@ Chronological record of wiki operations.
 - Updated [[Lecture-8-Priority-Queue]] with array indexing rules (1-based index, child $2i, 2i+1$, parent $\lfloor i/2 \rfloor$ with truncation).
 - Created [[Exam-Preparation-and-Classroom-Review]] consolidating midterm walkthrough and final exam traps.
 - Registered new exam prep page in [[index.md]].
+
+## [2026-09-16] audio & visual | Lecture 9 Sorting (Insertion, Selection, Bubble) & In-Class Assignment
+- Transcribed 2 audio recordings from 2026-09-16 lecture sessions (`20260916_092007`, `20260916_102037`).
+- Added verbatim transcript files to `wiki/sources/transcripts/`.
+- Analyzed 5 classroom whiteboard photos in `DSA-pic/`.
+- Updated [[Lecture-9-Sorting]] with lecturer exam warnings (no final-array-only answers), Insertion Sort position moves ($1+0+1+3+4=9$, Worst Case formula $N(N-1)/2$), Selection Sort Python `range(0)` trap, and Bubble Sort inversion swap count shortcut ($14$ swaps).
+- Integrated complete solutions and step-by-step trace for the in-class assignment on `[64, 34, 25, 12, 22, 11, 90]`.
+
