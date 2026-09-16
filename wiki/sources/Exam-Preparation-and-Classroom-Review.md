@@ -3,7 +3,7 @@ type: source
 tags: [exam-prep, midterm-solutions, final-exam-hints, hashing, heap, dsa-classroom-archive]
 created: 2026-09-09
 updated: 2026-09-09
-sources: [Voice/DSA-pic/, Voice/20260902_*.aac]
+sources: [Voice/DSA-pic/, Voice/20260902_*.aac, Voice/dsa20260909_*.aac, Voice/20260909_103704.aac]
 ---
 
 # คลังภาพถ่ายห้องเรียนและแนวข้อสอบวิชา Data Structures & Algorithms (Exam Prep & Classroom Archive)
@@ -153,6 +153,34 @@ listA.insert(0, 9)
 | **Left Child** | $2i$ | หาตำแหน่งลูกซ้าย |
 | **Right Child** | $2i + 1$ | หาตำแหน่งลูกขวา |
 | **Parent** | $\lfloor i / 2 \rfloor$ | **ตัดเศษทิ้งเสมอ (Truncate)** ห้ามปัดขึ้น! เช่น $\lfloor 7 / 2 \rfloor = 3$ |
+
+---
+
+## 💻 ส่วนที่ 4: การไล่โค้ด BinaryHeap และแนวข้อสอบปลายภาค
+*(อ้างอิงจากเทปเสียง 9 ก.ย. 2569: `dsa20260909_092303.aac` และ `20260909_103704.aac`)*
+
+### 1. โค้ดคลาส `BinaryHeap` (Min-Heap ในภาษา Python)
+- อาเรย์เก็บข้อมูลเริ่มต้นที่ Index 1 (`self.heapList = [0]`)
+- **การแทรกข้อมูล (`insert`):**
+  - นำข้อมูลใหม่ต่อท้ายสุด (`self.heapList.append(k)`) แล้วเรียก `self.percUp(self.currentSize)`
+  - **Percolate Up:** วนลูปเปรียบเทียบกับพ่อ ($i // 2$) หากลูกมีค่าน้อยกว่าพ่อ ให้สลับที่ (Swap) ขึ้นไปเรื่อยๆ จนกว่าจะถูกตำแหน่ง
+- **การลบค่าต่ำสุด (`deleteMin`):**
+  - นำ Root (Index 1) ออกไป ซึ่งเป็นค่าต่ำสุด
+  - นำโหนดตัวสุดท้ายของ Heap มาวางแทนที่ Root ชั่วคราว แล้วลดขนาด (`self.currentSize -= 1`)
+  - เรียก `self.percDown(1)` ดันค่านั้นลงไปตามตำแหน่งที่ถูกต้อง
+  - **Percolate Down:** หา Child ตัวที่เล็กที่สุดระหว่างลูกซ้าย ($2i$) กับลูกขวา ($2i+1$) แล้ว Swap กับลูกที่เล็กกว่า วนลูปจนกว่าคุณสมบัติ Min-Heap จะสมบูรณ์
+
+### 2. 🎯 ข้อสอบปลายภาคที่อาจารย์แง้มในคลาส (Final Exam Leaks)
+1. **ข้อสอบโจทย์ DeleteMin 3 รอบติด:**
+   - ในข้อสอบปลายภาค อาจารย์แง้มว่าจะให้รูป Heap หรือตาราง Array เริ่มต้นมา แล้วสั่งให้ทำ **DeleteMin ติดต่อกัน 3 ครั้ง**
+   - นักศึกษาต้องวาดสถานะของ Tree หรือเขียนค่าในตาราง Array หลังทำ DeleteMin แต่ละรอบให้ถูกต้อง
+   - ต้องบริหารเวลาให้ทำเสร็จภายใน 5-10 นาทีต่อข้อ
+2. **ข้อสอบคำนวณจำนวนโหนด Complete Binary Tree (ข้อสอบข้อใหญ่ข้อที่ 2):**
+   - คำถาม: *"How many minimum/maximum number of nodes of complete binary tree at the height 10?"*
+   - โหนดน้อยสุด: $2^H = 2^{10} = \mathbf{1,024 \text{ โหนด}}$
+   - โหนดมากสุด: $2^{H+1} - 1 = 2^{11} - 1 = \mathbf{2,047 \text{ โหนด}}$
+   - **⚠️ กฎสำคัญ:** ต้องตอบเป็นตัวเลขจริง 1024 และ 2047 ห้ามตอบติดรูปเลขยกกำลัง ไม่เช่นนั้นได้ 0 คะแนน!
+3. **การบ้านในคาบ 9 ก.ย.:** สั่งให้ทำ DeleteMin 1 ครั้ง และแปลงค่าลงในช่อง Array ส่งผ่าน Google Classroom ก่อนเวลา 12.00 น.
 
 ---
 
