@@ -69,6 +69,9 @@ Matrix space is O(V^2); list space is O(V+E). BFS/DFS/topological sort are O(V+E
 
 ### Practice and Exam Checklist
 - Identify graph type before solving.
+- **Path Notation Trap:** Path must be written as comma-separated sequence `$A, B, C$` or `(A, B, C)`. NEVER write with arrows `$A \to B \to C$` (0 points immediately).
+- **Complete Graph Formula:** $E = \frac{V(V-1)}{2}$. Must answer an integer (e.g., $V=10 \implies \mathbf{45}$ edges).
+- **Adjacency Matrix Memory Waste:** 7 vertices, 12 edges matrix has $49$ cells, of which $75.51\%$ are wasted zeros. Adjacency List uses $19$ cells, saving $61.22\%$.
 - For adjacency-list traces, list each vertex's outgoing neighbors.
 - For topological sort, compute indegrees first.
 - For shortest path, decide BFS vs Dijkstra based on weights.
@@ -77,3 +80,5 @@ Matrix space is O(V^2); list space is O(V+E). BFS/DFS/topological sort are O(V+E
 - [[Lecture-10-Graph|Lecture 10 Graph]]
 - [[topological-sort|Topological Sort]]
 - [[shortest-path-algorithms|Shortest Path Algorithms]]
+- [[exam-leaks-chapter-10-graph-theory|Exam Leaks & Formula Shortcuts (23 ก.ย. 2569)]]
+- [[transcripts/20260923_091645|Classroom Transcript 23 ก.ย. 2569]]

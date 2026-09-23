@@ -60,6 +60,8 @@ def topsort(graph):
 - [[graph-algorithms|Graph Concept Page]]
 - [[shortest-path-algorithms|Shortest Path (Dijkstra)]]
 - [[Assignment-4-Shortest-Path|Graph Assignment]]
+- [[exam-leaks-chapter-10-graph-theory|Exam Leaks & Formula Shortcuts (23 ก.ย. 2569)]]
+- [[transcripts/20260923_091645|Verbatim Classroom Transcript (23 ก.ย. 2569)]]
 
 ## Detailed Raw Source Integration
 
