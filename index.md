@@ -34,12 +34,14 @@
 - [[Lecture-9.1|Lecture 9.1: Advanced Sorting]]
 - [[Lecture-10-Graph|Lecture 10: Graph]]
 - [[Lecture-11-Shortest-Path|Lecture 11: Shortest Path]]
+- [[Lecture-11-Shortest-Path-and-Assignment-4-Exam-Briefing|Lecture 11: Shortest Path & Final Exam Briefing (Live 7 ต.ค. 2569)]]
 
 ## 🧪 Practice & Evaluation
 - [[Assignment-1-Linked-List|Assignment 1: Linked List]]
 - [[Assignment-2-Binary-Tree|Assignment 2: Binary Tree]]
 - [[Assignment-3-Binary-Heap|Assignment 3: Binary Heap]]
 - [[Assignment-4-Shortest-Path|Assignment 4: Shortest Path]]
+- [[master-dsa-exam-leaks-all-problems|Master DSA Exam Leaks Dossier (7 ข้อ 70 คะแนน)]]
 - [[Test-Program-1-Queue|Test 1: Queue]]
 - [[Test-Program-2-Sorting|Test 2: Sorting]]
 - [[Practice-Implementation-Guide|Practice Implementation Guide]]

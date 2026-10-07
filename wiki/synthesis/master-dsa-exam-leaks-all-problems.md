@@ -271,3 +271,41 @@
 2. **คำถามดักเรื่อง Null Graph:**  
    - โจทย์ถามหาเส้นทางจาก $A$ ไป $C$ บนกราฟที่ไม่มีโหนดดังกล่าว
    - **คำตอบที่ถูกต้อง:** *"No path exists from A to C because neither vertex exists in the graph."*
+
+---
+
+# หมวดที่ 6: ประกาศข้อสอบ Final ทางการ 7 ข้อ 70 คะแนน (ภาพหน้าจอ Notepad สด 7 ต.ค. 2569)
+* **หลักฐานภาพถ่าย:** `IMG_20261007_120504_255.jpg`, `IMG_20261007_120456_375.jpg`, `IMG_20261007_114532_858@2103460530.jpg`
+* **ไฟล์เสียงถอดความ:** `20261007_092525.aac` (เวลา 11:54 น. อาจารย์เปิด Notepad พิมพ์แจกแนวข้อสอบ)
+* **กติกาทางการ:**
+  - คะแนนเต็ม 70 คะแนน หาร 2 เหลือ 35 คะแนน
+  - **Open Book** เปิดตำราได้
+  - **ใช้เครื่องคิดเลขได้**
+  - **ห้ามใช้โทรศัพท์มือถือทุกกรณี**
+
+### ข้อ 6.1: โครงสร้างข้อสอบทั้ง 7 ข้อใหญ่
+1. **Hashing (10 คะแนน):**
+   - คำนวณ Hash Function, Collision Resolution (Separate Chaining, Linear Probing, Quadratic Probing, Double Hashing)
+   - คำนวณ Load Factor $\lambda = N/M$ และ Rehashing ขยายตาราง
+2. **Binary Heap (10 คะแนน):**
+   - แสดงการ Insert (Percolate Up) และ DeleteMin (Percolate Down)
+   - สูตร Index อาเรย์ 1 มิติ: Left $= 2i$, Right $= 2i+1$, Parent $= \lfloor i/2 \rfloor$
+3. **Insertion Sort (10 คะแนน):**
+   - Trace ทีละ Pass $p = 1, 2, \dots, N-1$
+   - ค่าอาเรย์หลังจบ Pass $p$, นับจำนวน Inversions และ Data Shifts
+4. **Selection Sort หรือ Bubble Sort (10 คะแนน):**
+   - อาจารย์ระบุว่าจะเลือกมา 1 อันเพื่อให้ออกข้อสอบ Trace ตาม Test Program 2
+5. **Topological Sort (10 คะแนน):**
+   - ตาราง Indegree ของกราฟ DAG, Queue Tracing และผลลัพธ์ Topological Order
+6. **Unweighted Shortest Path (10 คะแนน):**
+   - กราฟและตารางประมวลผล (เหมือน Assignment 4 เป๊ะ!)
+   - ตาราง 3 คอลัมน์ `Known`, `Dist (dv)`, `Path (pv)`
+   - Queue Tracing
+   - การ Backtrack ย้อนหา Shortest Path และระยะทาง
+7. **คำถามย่อย Properties & Calculations (10 คะแนน):**
+   - **โครงสร้างที่มี 2 Properties:** Binary Heap (Structure Property + Heap-Order Property)
+   - **โครงสร้างที่มี 3 Properties:** AVL Tree / Red-Black Tree
+   - **คำนวณ % ขยะในกราฟ:** Adjacency Matrix เสียพื้นที่เปล่า 75.51% (ใช้จริง 24.48%)
+   - **จำนวนเส้น Complete Graph:** $E = \frac{V(V-1)}{2}$
+   - **จำนวนโหนดสูงสุดใน Binary Tree ความสูง $h$:** $N = 2^{h+1} - 1$
+

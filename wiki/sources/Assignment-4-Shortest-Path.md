@@ -30,10 +30,44 @@ Implementation of **Dijkstra's Algorithm** to calculate the shortest weighted pa
             - Push `(new_dist, v)` into the Priority Queue.
 
 ## Related Pages
+- [[Lecture-11-Shortest-Path-and-Assignment-4-Exam-Briefing|Lecture 11 Shortest Path & Exam Briefing (7 ต.ค. 2569)]]
 - [[shortest-path-algorithms|Shortest Path Concept]]
 - [[graph-algorithms|Graph Algorithms]]
 - [[heap-priority-queue|Min-Priority Queue Logic]]
 - [[Practice-Implementation-Guide|Practice Implementation Guide]]
+
+## 🔥 เฉลยฉบับสมบูรณ์: ใบงาน Assignment 4 ในห้องเรียนสด (7 ตุลาคม 2569)
+- โจทย์มอบหมายในคาบเรียนสุดท้าย: กราฟ 7 จุดยอด ($A, B, C, D, E, F, G$) จุดเริ่มต้น **Vertex A**
+- ลิงก์เอกสารและรูปภาพหลักฐาน:
+  - เอกสารโจทย์: `IMG_20261007_114532_858@2103460530.jpg`
+  - ลายมือนักศึกษาส่งจริง: `IMG_20261007_192354_720@-1896741484.jpg`
+  - ไฟล์เฉลยละเอียดสมบูรณ์: `Assignment_4_Solved_StartA.pdf`, `Assignment_4_Solved_StartB.pdf`
+
+### 1. Adjacency List
+```text
+A -> [ B ] -> [ C ] -||
+B -> [ C ] -> [ E ] -> [ G ] -||
+C -> [ D ] -> [ E ] -||
+D -> [ A ] -> [ F ] -||
+E -> [ D ] -> [ F ] -||
+F -> -||
+G -> [ E ] -||
+```
+
+### 2. ตารางประมวลผล Shortest Path (Start Vertex = A)
+
+| Vertex | Known | Dist ($d_v$) | Path ($p_v$) | สถานะการขีดฆ่าในกระดาษคำตอบ |
+| :---: | :---: | :---: | :---: | :--- |
+| **A** | **T** | **0** | **0** | $F \rightarrow T$, $999 \rightarrow 0$ |
+| **B** | **T** | **1** | **A** | $F \rightarrow T$, $999 \rightarrow 1$, $0 \rightarrow A$ |
+| **C** | **T** | **1** | **A** | $F \rightarrow T$, $999 \rightarrow 1$, $0 \rightarrow A$ |
+| **D** | **T** | **2** | **C** | $F \rightarrow T$, $999 \rightarrow 2$, $0 \rightarrow C$ |
+| **E** | **T** | **2** | **B** | $F \rightarrow T$, $999 \rightarrow 2$, $0 \rightarrow B$ |
+| **F** | **T** | **3** | **E** | $F \rightarrow T$, $999 \rightarrow 3$, $0 \rightarrow E$ |
+| **G** | **T** | **2** | **B** | $F \rightarrow T$, $999 \rightarrow 2$, $0 \rightarrow B$ |
+
+- **ลำดับการดึงออกจาก Queue (Dequeue Order):** $A \rightarrow B \rightarrow C \rightarrow E \rightarrow G \rightarrow D \rightarrow F$
+
 
 ## Detailed Raw Source Integration
 
